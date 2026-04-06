@@ -3,6 +3,12 @@
   "description": "Daily dev log for the 1.00s project",
   "entries": [
     {
+      "date": "2026-04-06",
+      "file": "2026-04-06.md",
+      "title": "Level type redesigns — orbs, arcs, blind zones, and energy paths",
+      "summary": "Redesigned six level types with new visual mechanics — energy conduit paths, orbital alignment, arc-swing pendulums, ghost orbs, and type-colored glow orbs."
+    },
+    {
       "date": "2026-04-05",
       "file": "2026-04-05.md",
       "title": "Boss icons, star ratings, performance hardening, and closing walls polish",
