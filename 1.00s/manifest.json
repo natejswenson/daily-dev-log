@@ -1,5 +1,12 @@
 {
   "project": "1.00s",
   "description": "Daily dev log for the 1.00s project",
-  "entries": []
+  "entries": [
+    {
+      "date": "2026-04-05",
+      "file": "2026-04-05.md",
+      "title": "Boss icons, star ratings, performance hardening, and closing walls polish",
+      "summary": "Big day — shipped premium boss orb icons, a full star rating system with celebrations, closing walls gameplay polish, and a comprehensive performance sweep across 5 work streams."
+    }
+  ]
 }
