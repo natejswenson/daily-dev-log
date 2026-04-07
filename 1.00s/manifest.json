@@ -5,8 +5,8 @@
     {
       "date": "2026-04-07",
       "file": "2026-04-07.md",
-      "title": "Procedural deep-space background and 50-iteration loop map polish",
-      "summary": "Replaced the blurry JPEG map background with an 11-layer procedural rendering system, then ran 50 focused iterations of UI/UX polish across orbs, labels, conduits, confirmations, and navigation."
+      "title": "Arcade zen flow, lobby system, mode icons, and loop map overhaul",
+      "summary": "Massive day — redesigned arcade mode as a zen flow with instant retry, built a full lobby system for arcade and daily challenge, iterated mode nav icons through 6 versions, then overhauled the loop map with a procedural background and 50+ polish passes."
     },
     {
       "date": "2026-04-06",
