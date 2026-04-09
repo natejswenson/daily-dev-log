@@ -3,6 +3,12 @@
   "description": "Daily dev log for the 1.00s project",
   "entries": [
     {
+      "date": "2026-04-08",
+      "file": "2026-04-08.md",
+      "title": "Arcade competition redesign — single-mode app with weekly leaderboards",
+      "summary": "Redesigned the arcade experience as a single-mode app focused on weekly competition cycles, and added a weekly share card for sharing results."
+    },
+    {
       "date": "2026-04-07",
       "file": "2026-04-07.md",
       "title": "Arcade zen flow, lobby system, mode icons, and loop map overhaul",
