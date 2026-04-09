@@ -1,0 +1,11 @@
+{
+  "project": "mom-im-bored",
+  "entries": [
+    {
+      "date": "2026-04-08",
+      "file": "2026-04-08.md",
+      "title": "Massive polish day — sharing, detail redesign, bug fixes, and 57 new tests",
+      "summary": "Overhauled the detail screen with road trip branding and splash animations, shipped activity sharing with branded cards and pretty URLs, audited and improved 665+ activities, squashed 15 bugs, and added 57 unit tests."
+    }
+  ]
+}
