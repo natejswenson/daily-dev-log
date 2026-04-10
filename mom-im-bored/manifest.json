@@ -2,6 +2,12 @@
   "project": "mom-im-bored",
   "entries": [
     {
+      "date": "2026-04-09",
+      "file": "2026-04-09.md",
+      "title": "Crumpled paper physics, boredom buddy avatars, and streamlined kid switching",
+      "summary": "Major visual polish day — redesigned the paper balls to look like real crumpled paper, added a full avatar system with six unique animal 'Boredom Buddies,' and simplified the kid-switching flow from three steps to one."
+    },
+    {
       "date": "2026-04-08",
       "file": "2026-04-08.md",
       "title": "Massive polish day — sharing, detail redesign, bug fixes, and 57 new tests",
