@@ -2,6 +2,12 @@
   "project": "mom-im-bored",
   "entries": [
     {
+      "date": "2026-04-10",
+      "file": "2026-04-10.md",
+      "title": "v1.1 Release Prep — New Buddy Avatars, Performance Fixes, and App Store Submission",
+      "summary": "Shipped a massive visual overhaul of buddy avatars in a new outlined cartoon style, fixed reroll cooldown on activity completion, optimized DateFormatters and timer frequencies, rebuilt the share card with SwiftUI ImageRenderer, and prepped the v1.1 App Store submission with new metadata and updated icon."
+    },
+    {
       "date": "2026-04-09",
       "file": "2026-04-09.md",
       "title": "Crumpled paper physics, boredom buddy avatars, and streamlined kid switching",
