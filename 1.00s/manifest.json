@@ -3,6 +3,12 @@
   "description": "Daily dev log for the 1.00s project",
   "entries": [
     {
+      "date": "2026-04-11",
+      "file": "2026-04-11.md",
+      "title": "Complete UX/UI overhaul — game-as-home, crystal audio, death reveal",
+      "summary": "Redesigned the entire app flow so the game IS the home screen. Added procedural crystal audio, competitive death reveal, dot speed interpolation, and progressive background darkening."
+    },
+    {
       "date": "2026-04-08",
       "file": "2026-04-08.md",
       "title": "Arcade competition redesign — single-mode app with weekly leaderboards",
