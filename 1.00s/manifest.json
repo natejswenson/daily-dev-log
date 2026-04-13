@@ -3,6 +3,12 @@
   "description": "Daily dev log for the 1.00s project",
   "entries": [
     {
+      "date": "2026-04-12",
+      "file": "2026-04-12.md",
+      "title": "Orb fixes + formal polish pass — phase-drift bug, Extinguish death, glass refinement",
+      "summary": "Hunted down a phase-drift bug that was killing players at depth 6-7, then did a design-first craft pass on the gameplay orb: unified animation vocabulary, 6-layer Fresnel-rim glass face, fixed-cyan tracking dot, and a new meditative Extinguish death sequence replacing the ring-shatter."
+    },
+    {
       "date": "2026-04-11",
       "file": "2026-04-11.md",
       "title": "Complete UX/UI overhaul — game-as-home, crystal audio, death reveal",
