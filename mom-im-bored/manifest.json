@@ -2,6 +2,12 @@
   "project": "mom-im-bored",
   "entries": [
     {
+      "date": "2026-04-12",
+      "file": "2026-04-12.md",
+      "title": "Clawing back from an App Store rejection — bug fixes, full iPad redesign, and resubmission",
+      "summary": "Apple rejected the app under Guideline 2.1(a) for two broken flows on iPad Air. Diagnosed root causes, fixed both bugs, redesigned the entire iPad experience with size-class-aware scaling, and resubmitted to App Review."
+    },
+    {
       "date": "2026-04-10",
       "file": "2026-04-10.md",
       "title": "v1.1 Release Prep — New Buddy Avatars, Performance Fixes, and App Store Submission",
