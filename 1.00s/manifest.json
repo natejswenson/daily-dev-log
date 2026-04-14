@@ -3,6 +3,12 @@
   "description": "Daily dev log for the 1.00s project",
   "entries": [
     {
+      "date": "2026-04-13",
+      "file": "2026-04-13.md",
+      "title": "Orb breathing reborn, leaderboard card, Supabase audit fixes",
+      "summary": "A marathon day rebuilding how the orb breathes, shipping a refined centrally-overlaid leaderboard card, auditing the Supabase data flow end-to-end, and fixing a critical auth bug that was silently orphaning every cold-launched user's profile."
+    },
+    {
       "date": "2026-04-12",
       "file": "2026-04-12.md",
       "title": "Orb fixes + formal polish pass — phase-drift bug, Extinguish death, glass refinement",
