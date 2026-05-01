@@ -3,6 +3,12 @@
   "description": "Daily dev log for the 1.00s project",
   "entries": [
     {
+      "date": "2026-05-01",
+      "file": "2026-05-01.md",
+      "title": "ATT rejection turnaround — v2.0 build 5 submitted to App Review",
+      "summary": "App Store Connect rejected v2.0 build 4 overnight: 'we are unable to locate the App Tracking Transparency permission request.' One-commit fix, verified on iPad Air 11 + iPhone 16 Pro Max simulators, retagged v2.0 at the actual submitted build, resubmitted before lunch."
+    },
+    {
       "date": "2026-04-30",
       "file": "2026-04-30.md",
       "title": "v2.0 ships — pre-launch audit, iPad-native, App Store resubmit",
