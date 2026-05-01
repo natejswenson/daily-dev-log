@@ -3,6 +3,12 @@
   "description": "Daily dev log for the 1.00s project",
   "entries": [
     {
+      "date": "2026-04-30",
+      "file": "2026-04-30.md",
+      "title": "v2.0 ships — pre-launch audit, iPad-native, App Store resubmit",
+      "summary": "A 27-commit sprint from outdated v1.x in the App Store to v2.0 tagged on main: deep UX/monetization audit, EEA consent + iOS ATT compliance, polish pass across visuals/onboarding/post-run/audio/a11y, full iPad-native treatment, and a custom-cut promo video for the App Store preview."
+    },
+    {
       "date": "2026-04-13",
       "file": "2026-04-13.md",
       "title": "Orb breathing reborn, leaderboard card, Supabase audit fixes",
