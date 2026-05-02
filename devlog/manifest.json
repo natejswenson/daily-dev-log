@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "date": "2026-05-01",
+      "file": "2026-05-01.md",
+      "title": "Shipped @natjswenson/devlog on npm \u2014 the personal dev-log skill, now shareable",
+      "summary": "Took the personal /devlog Claude Code skill, genericized it, wrapped it in an npx CLI, and shipped it to npm so the folks who pinged on LinkedIn can install it with one command."
+    }
+  ]
+}
