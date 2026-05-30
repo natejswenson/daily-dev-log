@@ -15,6 +15,18 @@
       "summary": "A 27-commit sprint from outdated v1.x in the App Store to v2.0 tagged on main: deep UX/monetization audit, EEA consent + iOS ATT compliance, polish pass across visuals/onboarding/post-run/audio/a11y, full iPad-native treatment, and a custom-cut promo video for the App Store preview."
     },
     {
+      "date": "2026-04-15",
+      "file": "2026-04-15.md",
+      "title": "Ad monetization v2 lands on main",
+      "summary": "Merged the ad-monetization-v2 PR — banner, interstitial, and rewarded-ads shield work from yesterday — onto main."
+    },
+    {
+      "date": "2026-04-14",
+      "file": "2026-04-14.md",
+      "title": "Active orb retune, leaderboard polish, breath guide sync, ad monetization v2",
+      "summary": "Ten-commit sprint across four threads: a Supabase auth fix, a hero-mode rework of the active orb, a three-commit polish pass on the weekly leaderboard, a four-commit chase to lock the inhale/exhale guide 1:1 with the breathing orb, and a feature-branch rebuild of the entire ads stack."
+    },
+    {
       "date": "2026-04-13",
       "file": "2026-04-13.md",
       "title": "Orb breathing reborn, leaderboard card, Supabase audit fixes",
