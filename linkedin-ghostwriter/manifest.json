@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "date": "2026-06-05",
+      "file": "2026-06-05.md",
+      "title": "Optional diagrams and a per-user brand guide for the LinkedIn ghostwriter",
+      "summary": "Added opt-in image generation — Mermaid diagrams and designed cards, rendered locally — to the LinkedIn ghostwriter, plus a personal brand guide that auto-applies your byline."
+    }
+  ]
+}
