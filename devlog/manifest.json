@@ -1,9 +1,15 @@
 {
   "entries": [
     {
+      "date": "2026-06-05",
+      "file": "2026-06-05.md",
+      "title": "Accessibility pass on the dev-log component, shipped as 0.1.9",
+      "summary": "Made the drop-in React dev-log feed fully keyboard- and screen-reader-accessible with proper disclosure semantics on the expand/collapse, and released it as 0.1.9."
+    },
+    {
       "date": "2026-05-01",
       "file": "2026-05-01.md",
-      "title": "Shipped @natjswenson/devlog on npm \u2014 the personal dev-log skill, now shareable",
+      "title": "Shipped @natjswenson/devlog on npm — the personal dev-log skill, now shareable",
       "summary": "Took the personal /devlog Claude Code skill, genericized it, wrapped it in an npx CLI, and shipped it to npm so the folks who pinged on LinkedIn can install it with one command."
     }
   ]
