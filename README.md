@@ -46,6 +46,7 @@ summary: "1-2 sentence summary"
 - **[devlog](https://github.com/natejswenson/devlog)** — dev log for `@natjswenson/devlog`, the build-in-public skill that generates these entries
 - **[linkedin-ghostwriter](https://github.com/natejswenson/linkedin-ghostwriter)** — dev log for the LinkedIn ghostwriter, a Claude skill that drafts posts in your own voice
 - **[mom-im-bored](https://github.com/natejswenson/imboerd)** — dev log for the Mom I'm Bored project
+- **[onetapskill](https://github.com/natejswenson/onetapskill)** — dev log for OneTap Resume, a Claude Code skill that tailors a résumé to a job and renders a PDF, free on your subscription
 
 ## How entries get here
 
