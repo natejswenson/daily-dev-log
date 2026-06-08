@@ -1,6 +1,12 @@
 {
   "entries": [
     {
+      "date": "2026-06-08",
+      "file": "2026-06-08.md",
+      "title": "Added a ramp card type to the ghostwriter for accelerating progressions",
+      "summary": "Ported an unmerged feature into the consolidated repo via PR: a new 'ramp' visual card — three ascending steps with the last highlighted — for posts about momentum and acceleration."
+    },
+    {
       "date": "2026-06-06",
       "file": "2026-06-06.md",
       "title": "Treating the LinkedIn skill as code: evals, 100% test coverage, and v0.0.1",

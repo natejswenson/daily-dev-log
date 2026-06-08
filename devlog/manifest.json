@@ -1,6 +1,12 @@
 {
   "entries": [
     {
+      "date": "2026-06-08",
+      "file": "2026-06-08.md",
+      "title": "Taught devlog to track per-skill feeds inside a monorepo (0.2.0)",
+      "summary": "Added an optional pathFilter to the devlog skill so several projects can share one monorepo repo/path while each tracks only its own subdirectory — the change that lets three consolidated skills keep separate dev-log feeds."
+    },
+    {
       "date": "2026-06-05",
       "file": "2026-06-05.md",
       "title": "Accessibility pass on the dev-log component, shipped as 0.1.9",
