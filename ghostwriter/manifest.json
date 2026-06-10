@@ -1,6 +1,12 @@
 {
   "entries": [
     {
+      "date": "2026-06-10",
+      "file": "2026-06-10.md",
+      "title": "Ghostwriter v0.3: a LinkedIn reach playbook, flow diagrams, and carousels",
+      "summary": "Shipped ghostwriter v0.3.0 — researched the LinkedIn algorithm and baked a sourced reach playbook into the skill, added a clean flow-diagram card type, and built end-to-end carousel support (PDFs that LinkedIn renders as swipeable slides), verified by publishing one live."
+    },
+    {
       "date": "2026-06-08",
       "file": "2026-06-08.md",
       "title": "Added a ramp card type to the ghostwriter for accelerating progressions",
