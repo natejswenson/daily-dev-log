@@ -1,6 +1,12 @@
 {
   "entries": [
     {
+      "date": "2026-06-15",
+      "file": "2026-06-15.md",
+      "title": "Shipped training plans end-to-end — then let a measurement gate kill a latency optimization",
+      "summary": "Built the full goal-driven training-plans feature (own tab + daily-brief integration + draft-only AI authoring) and cut v0.2.0, then ran a latency pass on the agent loop — keeping the safe wins and reverting the brief pre-fetch when its live gate proved it didn't help."
+    },
+    {
       "date": "2026-06-06",
       "file": "2026-06-06.md",
       "title": "Treating my fitness agent like real code: eval, tests, CI, and v0.1.0",
