@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-06-19",
+      "file": "v0.3.0.md",
+      "title": "Reworked devlog to log releases, written in my own voice (0.3.0)",
+      "summary": "devlog 0.3.0 switches from a daily commit log to one entry per version release, and writes each entry from a configurable voice profile so the log sounds like me.",
+      "version": "v0.3.0"
+    },
+    {
       "date": "2026-06-08",
       "file": "2026-06-08.md",
       "title": "Taught devlog to track per-skill feeds inside a monorepo (0.2.0)",
