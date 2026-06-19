@@ -1,6 +1,12 @@
 {
   "entries": [
     {
+      "date": "2026-06-18",
+      "file": "2026-06-18.md",
+      "title": "Local Fitness goes agent-first — and a live siege earns its keep — v0.5.0",
+      "summary": "Re-architected local-fitness from a server-runs-Claude app into an agent-first one — the web server now holds zero inference and the coach lives in an MCP client — then ran a live quality-gate + siege against the running container that caught (and I fixed) a real Fatal in the SQL tool. Shipped v0.5.0."
+    },
+    {
       "date": "2026-06-15",
       "file": "2026-06-15.md",
       "title": "Shipped training plans end-to-end — then let a measurement gate kill a latency optimization",
