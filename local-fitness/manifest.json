@@ -1,6 +1,12 @@
 {
   "entries": [
     {
+      "date": "2026-06-20",
+      "file": "2026-06-20.md",
+      "title": "The brief got 3x faster by measuring, not guessing (v0.6.0)",
+      "summary": "The daily fitness brief dropped from ~6 minutes to ~80 seconds with equal-or-better quality, after measurement killed the fancy parallel plan and pointed at a one-line reasoning-effort lever."
+    },
+    {
       "date": "2026-06-18",
       "file": "2026-06-18.md",
       "title": "Local Fitness goes agent-first — and a live siege earns its keep — v0.5.0",
