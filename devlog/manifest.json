@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-06-20",
+      "file": "v0.3.1.md",
+      "title": "devlog now fetches tags before it looks for releases (0.3.1)",
+      "summary": "Fixes a discovery bug where /devlog missed a release that was already live, because it read only local git tags and never fetched. Also rides the new shared release CI.",
+      "version": "v0.3.1"
+    },
+    {
       "date": "2026-06-19",
       "file": "v0.3.0.md",
       "title": "Reworked devlog to log releases, written in my own voice (0.3.0)",
