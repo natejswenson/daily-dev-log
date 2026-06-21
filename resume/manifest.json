@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-06-21",
+      "file": "v0.2.0.md",
+      "title": "resume v0.2.0: a real benchmark, and a retry that stopped wasting time",
+      "summary": "Adds a real accuracy and speed benchmark you can run with one command, and makes the slow retry path roughly seven times faster by only redoing the part that actually changed.",
+      "version": "v0.2.0"
+    },
+    {
       "date": "2026-06-07",
       "file": "2026-06-07.md",
       "title": "Launched OneTap Resume as a Claude Code skill — 13× faster, with a live style picker, shipped as v0.1.1",
