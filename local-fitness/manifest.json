@@ -9,9 +9,17 @@
     },
     {
       "date": "2026-06-18",
-      "file": "2026-06-18.md",
+      "file": "v0.5.0.md",
+      "version": "v0.5.0",
       "title": "Local Fitness goes agent-first — and a live siege earns its keep — v0.5.0",
       "summary": "Re-architected local-fitness from a server-runs-Claude app into an agent-first one — the web server now holds zero inference and the coach lives in an MCP client — then ran a live quality-gate + siege against the running container that caught (and I fixed) a real Fatal in the SQL tool. Shipped v0.5.0."
+    },
+    {
+      "date": "2026-06-17",
+      "file": "v0.3.0.md",
+      "version": "v0.3.0",
+      "title": "The fitness MCP becomes the primary interface (v0.3.0)",
+      "summary": "Exposed the fitness data and coaching over MCP so I can query it straight from Claude, instead of the synthesis living only inside the server's brief loop. Adds a coach prompt, schema and brief resources, a one-call daily_snapshot tool, miles formatting, and a write surface for observations and manual workouts."
     },
     {
       "date": "2026-06-15",
@@ -21,7 +29,8 @@
     },
     {
       "date": "2026-06-06",
-      "file": "2026-06-06.md",
+      "file": "v0.1.0.md",
+      "version": "v0.1.0",
       "title": "Treating my fitness agent like real code: eval, tests, CI, and v0.1.0",
       "summary": "Gave local-fitness a real quality pipeline — a prompt scorer, a tested core behind a coverage gate, CI, and an auto-release that shipped v0.1.0 — then rewrote the README so it actually reads like an open-source project."
     }

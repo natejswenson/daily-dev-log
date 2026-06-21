@@ -9,9 +9,10 @@
     },
     {
       "date": "2026-06-07",
-      "file": "2026-06-07.md",
+      "file": "v0.1.1.md",
       "title": "Launched OneTap Resume as a Claude Code skill — 13× faster, with a live style picker, shipped as v0.1.1",
-      "summary": "Turned the OneTap Resume pipeline into a self-contained Claude Code skill that runs free on the claude subscription: diagnosed the multi-minute tailoring as wasted thinking tokens and made it ~13× faster, added a streaming UX and an instant style picker, leaned out ~1,580 lines, and shipped v0.1.0 then v0.1.1 with automated releases and an MIT license."
+      "summary": "Turned the OneTap Resume pipeline into a self-contained Claude Code skill that runs free on the claude subscription: diagnosed the multi-minute tailoring as wasted thinking tokens and made it ~13× faster, added a streaming UX and an instant style picker, leaned out ~1,580 lines, and shipped v0.1.0 then v0.1.1 with automated releases and an MIT license.",
+      "version": "v0.1.1"
     }
   ]
 }

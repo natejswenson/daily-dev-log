@@ -2,21 +2,24 @@
   "entries": [
     {
       "date": "2026-06-10",
-      "file": "2026-06-10.md",
+      "file": "v0.3.0.md",
       "title": "Ghostwriter v0.3: a LinkedIn reach playbook, flow diagrams, and carousels",
-      "summary": "Shipped ghostwriter v0.3.0 — researched the LinkedIn algorithm and baked a sourced reach playbook into the skill, added a clean flow-diagram card type, and built end-to-end carousel support (PDFs that LinkedIn renders as swipeable slides), verified by publishing one live."
+      "summary": "Shipped ghostwriter v0.3.0 — researched the LinkedIn algorithm and baked a sourced reach playbook into the skill, added a clean flow-diagram card type, and built end-to-end carousel support (PDFs that LinkedIn renders as swipeable slides), verified by publishing one live.",
+      "version": "v0.3.0"
     },
     {
       "date": "2026-06-08",
-      "file": "2026-06-08.md",
+      "file": "v0.1.0.md",
       "title": "Added a ramp card type to the ghostwriter for accelerating progressions",
-      "summary": "Ported an unmerged feature into the consolidated repo via PR: a new 'ramp' visual card — three ascending steps with the last highlighted — for posts about momentum and acceleration."
+      "summary": "Ported an unmerged feature into the consolidated repo via PR: a new 'ramp' visual card — three ascending steps with the last highlighted — for posts about momentum and acceleration.",
+      "version": "v0.1.0"
     },
     {
       "date": "2026-06-06",
-      "file": "2026-06-06.md",
+      "file": "v0.0.1.md",
       "title": "Treating the LinkedIn skill as code: evals, 100% test coverage, and v0.0.1",
-      "summary": "Made the ghostwriter skill follow its own advice — a skill is code, so I scored its SKILL.md, brought every script to 100% test coverage behind a CI gate, and cut the first versioned release."
+      "summary": "Made the ghostwriter skill follow its own advice — a skill is code, so I scored its SKILL.md, brought every script to 100% test coverage behind a CI gate, and cut the first versioned release.",
+      "version": "v0.0.1"
     },
     {
       "date": "2026-06-05",

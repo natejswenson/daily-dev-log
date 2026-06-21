@@ -16,15 +16,17 @@
     },
     {
       "date": "2026-06-08",
-      "file": "2026-06-08.md",
+      "file": "v0.2.0.md",
       "title": "Taught devlog to track per-skill feeds inside a monorepo (0.2.0)",
-      "summary": "Added an optional pathFilter to the devlog skill so several projects can share one monorepo repo/path while each tracks only its own subdirectory — the change that lets three consolidated skills keep separate dev-log feeds."
+      "summary": "Added an optional pathFilter to the devlog skill so several projects can share one monorepo repo/path while each tracks only its own subdirectory — the change that lets three consolidated skills keep separate dev-log feeds.",
+      "version": "v0.2.0"
     },
     {
       "date": "2026-06-05",
-      "file": "2026-06-05.md",
+      "file": "v0.1.9.md",
       "title": "Accessibility pass on the dev-log component, shipped as 0.1.9",
-      "summary": "Made the drop-in React dev-log feed fully keyboard- and screen-reader-accessible with proper disclosure semantics on the expand/collapse, and released it as 0.1.9."
+      "summary": "Made the drop-in React dev-log feed fully keyboard- and screen-reader-accessible with proper disclosure semantics on the expand/collapse, and released it as 0.1.9.",
+      "version": "v0.1.9"
     },
     {
       "date": "2026-05-01",
