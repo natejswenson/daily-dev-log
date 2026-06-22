@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-06-22",
+      "file": "v0.4.0.md",
+      "title": "Ghostwriter v0.4: one clean card family, terminal code cards, and a portrait carousel",
+      "summary": "Shipped ghostwriter v0.4.0: redesigned the LinkedIn image cards into one clean, consistent family, added a terminal code-snippet card and a Claude Code session card, and rebuilt the carousel as a portrait, research-backed document (the 4:5 sizing flagged as next in v0.3).",
+      "version": "v0.4.0"
+    },
+    {
       "date": "2026-06-10",
       "file": "v0.3.0.md",
       "title": "Ghostwriter v0.3: a LinkedIn reach playbook, flow diagrams, and carousels",
