@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-06-22",
+      "file": "v0.7.0.md",
+      "version": "v0.7.0",
+      "title": "The coach stopped querying its own database by hand",
+      "summary": "A new get_training_plan_progress tool returns the full graded training plan in one call, so the agent answers plan questions with a clean table instead of dropping to raw SQL. Shipped with a prompt-and-instructions nudge to prefer the structured tools, after a full design and review pass."
+    },
+    {
       "date": "2026-06-20",
       "file": "v0.6.0.md",
       "version": "v0.6.0",
