@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-06-23",
+      "file": "v0.8.0.md",
+      "version": "v0.8.0",
+      "title": "The plan stopped lying about today, and started counting the walk (v0.8.0)",
+      "summary": "Fixed two training-plan grading bugs: a completed workout today no longer shows pending, and a recovery walk now counts on easy days instead of grading as a miss. Surfacing and the plan tab's row coloring were corrected to match."
+    },
+    {
       "date": "2026-06-22",
       "file": "v0.7.0.md",
       "version": "v0.7.0",
