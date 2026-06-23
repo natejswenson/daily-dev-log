@@ -5,7 +5,7 @@
       "file": "v0.9.0.md",
       "version": "v0.9.0",
       "title": "The grading rules stopped being mine and started being yours (v0.9.0)",
-      "summary": "Five hardcoded coaching choices — whether walks count, how lenient the grade bands are, how far back to look for a projected finish — are now user settings, each defaulting to the old hardcoded value so a fresh clone is unchanged."
+      "summary": "Five hardcoded coaching choices (whether walks count, how lenient the grade bands are, how far back to look for a projected finish) are now user settings, each defaulting to the old hardcoded value so a fresh clone is unchanged."
     },
     {
       "date": "2026-06-23",
