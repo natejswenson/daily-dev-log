@@ -2,6 +2,13 @@
   "entries": [
     {
       "date": "2026-06-23",
+      "file": "v0.11.0.md",
+      "version": "v0.11.0",
+      "title": "The coach voice follows you into Claude Code, not just the slash command (v0.11.0)",
+      "summary": "The selected coach tone profile now reaches tool-driven Claude Code chat, not only the fitness slash commands, by advertising the persona as live MCP server instructions resolved at each connect."
+    },
+    {
+      "date": "2026-06-23",
       "file": "v0.10.0.md",
       "version": "v0.10.0",
       "title": "You can pick how the coach talks to you now (v0.10.0)",
