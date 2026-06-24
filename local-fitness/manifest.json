@@ -2,6 +2,13 @@
   "entries": [
     {
       "date": "2026-06-23",
+      "file": "v0.10.0.md",
+      "version": "v0.10.0",
+      "title": "You can pick how the coach talks to you now (v0.10.0)",
+      "summary": "The daily brief's coaching voice is now a profile you choose (supportive, neutral, hardass, or the old adaptive default), with tunable numbers whose thresholds carry real, unit-tested behavior, and every profile is checked against its expected outcome automatically."
+    },
+    {
+      "date": "2026-06-23",
       "file": "v0.9.0.md",
       "version": "v0.9.0",
       "title": "The grading rules stopped being mine and started being yours (v0.9.0)",
