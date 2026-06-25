@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-06-25",
+      "file": "v0.12.0.md",
+      "version": "v0.12.0",
+      "title": "A real branch model for the fitness agent, plus a dependency sweep (v0.12.0)",
+      "summary": "Adopted a feature->dev->main branch model with automatic release tagging, and cleared a backlog of dependency and CI bumps including Node 26."
+    },
+    {
       "date": "2026-06-23",
       "file": "v0.11.0.md",
       "version": "v0.11.0",

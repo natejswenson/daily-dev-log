@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-06-24",
+      "file": "v0.5.0.md",
+      "version": "v0.5.0",
+      "title": "A matrix card for side-by-side comparisons (v0.5.0)",
+      "summary": "Added a matrix card type to ghostwriter: a comparison grid for posts that weigh a few options against each other."
+    },
+    {
       "date": "2026-06-22",
       "file": "v0.4.0.md",
       "title": "Ghostwriter v0.4: one clean card family, terminal code cards, and a portrait carousel",
