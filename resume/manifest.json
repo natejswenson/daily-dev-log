@@ -3,15 +3,15 @@
     {
       "date": "2026-06-21",
       "file": "v0.2.0.md",
-      "title": "resume v0.2.0: a real benchmark, and a retry that stopped wasting time",
-      "summary": "Adds a real accuracy and speed benchmark you can run with one command, and makes the slow retry path roughly seven times faster by only redoing the part that actually changed.",
+      "title": "A benchmark you'll actually run, and a retry that stopped redoing everything",
+      "summary": "The resume skill got a benchmark cheap and stable enough to run on every change, and a retry path roughly seven times faster because it only redoes the part that changed. Here is the full build: fixtures and a rubric, a judge that runs through the Claude CLI, a gate that watches only the treatment, and an incremental retry.",
       "version": "v0.2.0"
     },
     {
       "date": "2026-06-07",
       "file": "v0.1.1.md",
-      "title": "Launched OneTap Resume as a Claude Code skill — 13× faster, with a live style picker, shipped as v0.1.1",
-      "summary": "Turned the OneTap Resume pipeline into a self-contained Claude Code skill that runs free on the claude subscription: diagnosed the multi-minute tailoring as wasted thinking tokens and made it ~13× faster, added a streaming UX and an instant style picker, leaned out ~1,580 lines, and shipped v0.1.0 then v0.1.1 with automated releases and an MIT license.",
+      "title": "When thinking makes the model slower and worse: turning extended reasoning off for extraction",
+      "summary": "A four-bullet résumé produced ~800 characters of JSON but billed 16,000 output tokens; the rest was extended thinking the task never needed. Turning it off, moving the self-audit into deterministic code, and letting an eval sweep settle it made a real run about 13x faster.",
       "version": "v0.1.1"
     }
   ]

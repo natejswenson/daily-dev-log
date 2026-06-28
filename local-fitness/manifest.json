@@ -4,77 +4,77 @@
       "date": "2026-06-25",
       "file": "v0.12.0.md",
       "version": "v0.12.0",
-      "title": "A real branch model for the fitness agent, plus a dependency sweep (v0.12.0)",
-      "summary": "Adopted a feature->dev->main branch model with automatic release tagging, and cleared a backlog of dependency and CI bumps including Node 26."
+      "title": "Giving a solo project a real branch model (and why it isn't overkill)",
+      "summary": "Why a one-person, agent-built project still earns a feature→dev→main branch model with automatic release tagging, the CI wiring that cuts the tag only when the version is new, and the dependency drift a single major bump surfaced."
     },
     {
       "date": "2026-06-23",
       "file": "v0.11.0.md",
       "version": "v0.11.0",
-      "title": "The coach voice follows you into Claude Code, not just the slash command (v0.11.0)",
-      "summary": "The selected coach tone profile now reaches tool-driven Claude Code chat, not only the fitness slash commands, by advertising the persona as live MCP server instructions resolved at each connect."
+      "title": "Handing an AI client a persona over MCP, and learning to resolve it late",
+      "summary": "The coach voice now follows me into Claude Code through the MCP server's instructions field. Getting it right meant resolving the persona at connect time instead of import time, and failing safe when the lookup misses. Here is the full build."
     },
     {
       "date": "2026-06-23",
       "file": "v0.10.0.md",
       "version": "v0.10.0",
-      "title": "You can pick how the coach talks to you now (v0.10.0)",
-      "summary": "The daily brief's coaching voice is now a profile you choose (supportive, neutral, hardass, or the old adaptive default), with tunable numbers whose thresholds carry real, unit-tested behavior, and every profile is checked against its expected outcome automatically."
+      "title": "Selectable coach tones, and making the model's dials actually do something",
+      "summary": "The daily brief's voice is now a profile you choose. The real work wasn't the personas, it was making the tuning numbers deterministic instead of decorative, and testing all four tones against expectations rather than reading a sample."
     },
     {
       "date": "2026-06-23",
       "file": "v0.9.0.md",
       "version": "v0.9.0",
-      "title": "The grading rules stopped being mine and started being yours (v0.9.0)",
-      "summary": "Five hardcoded coaching choices (whether walks count, how lenient the grade bands are, how far back to look for a projected finish) are now user settings, each defaulting to the old hardcoded value so a fresh clone is unchanged."
+      "title": "A settings resolver that defaults to the present and fails safe on bad input",
+      "summary": "Five coaching decisions were hardcoded as my preferences. Turning them into user settings came down to one resolution order over three existing config homes, defaults that exactly reproduce the old behavior, and validation that falls back instead of silently grading you wrong."
     },
     {
       "date": "2026-06-23",
       "file": "v0.8.0.md",
       "version": "v0.8.0",
-      "title": "The plan stopped lying about today, and started counting the walk (v0.8.0)",
-      "summary": "Fixed two training-plan grading bugs: a completed workout today no longer shows pending, and a recovery walk now counts on easy days instead of grading as a miss. Surfacing and the plan tab's row coloring were corrected to match."
+      "title": "Grade the state, not the calendar: a date is a stand-in for the question you actually care about",
+      "summary": "Two grading bugs traced to the same mistake: the grader read the calendar instead of the outcome, so today's finished run showed pending and a recovery walk read as a miss. The fix is a small decision table that grades by what actually happened, plus one verdict the UI reads instead of recomputing."
     },
     {
       "date": "2026-06-22",
       "file": "v0.7.0.md",
       "version": "v0.7.0",
-      "title": "The coach stopped querying its own database by hand (v0.7.0)",
-      "summary": "A new get_training_plan_progress tool returns the full graded training plan in one call, so the agent answers plan questions with a clean table instead of dropping to raw SQL. Shipped with a prompt-and-instructions nudge to prefer the structured tools, after a full design and review pass."
+      "title": "Give the agent a tool, not a shell",
+      "summary": "My fitness agent answered a plan question by opening a shell and writing raw SQL. The fix was not a better prompt, it was a missing tool. Here is the full build of the high-level tool that replaced the improvisation: a data model, a per-day grading rule with one honest boundary, the single tool that returns the whole graded plan, and the test that defends it."
     },
     {
       "date": "2026-06-20",
       "file": "v0.6.0.md",
       "version": "v0.6.0",
-      "title": "The brief got 3x faster by measuring, not guessing (v0.6.0)",
-      "summary": "The daily fitness brief dropped from ~6 minutes to ~80 seconds with equal-or-better quality, after measurement killed the fancy parallel plan and pointed at a one-line reasoning-effort lever."
+      "title": "The brief got ~2.5-3x faster, and the fancy idea lost to a measurement",
+      "summary": "The daily brief dropped from about four minutes to roughly 80 seconds at equal-or-better quality, about 2.5-3x. The parallel-fan-out plan I designed lost to a profiler, the real lever was one setting, and less model reasoning made the output better, not worse. Here is the full build: profile the phases, dial reasoning effort to low, render tables in code, and confirm with a blind A/B."
     },
     {
       "date": "2026-06-18",
       "file": "v0.5.0.md",
       "version": "v0.5.0",
-      "title": "Local Fitness goes agent-first — and a live siege earns its keep — v0.5.0",
-      "summary": "Re-architected local-fitness from a server-runs-Claude app into an agent-first one — the web server now holds zero inference and the coach lives in an MCP client — then ran a live quality-gate + siege against the running container that caught (and I fixed) a real Fatal in the SQL tool. Shipped v0.5.0."
+      "title": "When the agent can read and write everything, the server stops running the model",
+      "summary": "Once the agent can both read and write local-fitness over MCP, the synthesis no longer needs to live inside the server. I moved the daily brief out to a client agent that drives the same MCP tools, leaving the server as pure data and deterministic compute. Here is the full build, plus the siege finding that a 'read-only' SQL guard wasn't read-only."
     },
     {
       "date": "2026-06-17",
       "file": "v0.3.0.md",
       "version": "v0.3.0",
-      "title": "The fitness MCP becomes the primary interface (v0.3.0)",
-      "summary": "Exposed the fitness data and coaching over MCP so I can query it straight from Claude, instead of the synthesis living only inside the server's brief loop. Adds a coach prompt, schema and brief resources, a one-call daily_snapshot tool, miles formatting, and a write surface for observations and manual workouts."
+      "title": "Make MCP the front door: one server, a read-only fence, and a localhost that still needs locks",
+      "summary": "I put my self-hosted fitness data behind the Model Context Protocol so I can query and update it straight from an AI client. Here is the full build: defining tools and resources, serving one server over two transports, fencing the brief loop to read-only at the structure level, and the security a localhost MCP server actually needs."
     },
     {
       "date": "2026-06-15",
       "file": "2026-06-15.md",
-      "title": "Shipped training plans end-to-end — then let a measurement gate kill a latency optimization",
-      "summary": "Built the full goal-driven training-plans feature (own tab + daily-brief integration + draft-only AI authoring) and cut v0.2.0, then ran a latency pass on the agent loop — keeping the safe wins and reverting the brief pre-fetch when its live gate proved it didn't help."
+      "title": "Guarantees the model can't break: shipping AI training plans design-first",
+      "summary": "I shipped goal-driven training plans where the AI can draft but never decide, a single active plan is enforced by the database itself, and adherence is graded off the last day data actually synced. The throughline: put the things you can't afford to get wrong into structure, not into prompts or discipline."
     },
     {
       "date": "2026-06-06",
       "file": "v0.1.0.md",
       "version": "v0.1.0",
-      "title": "Treating my fitness agent like real code: eval, tests, CI, and v0.1.0",
-      "summary": "Gave local-fitness a real quality pipeline — a prompt scorer, a tested core behind a coverage gate, CI, and an auto-release that shipped v0.1.0 — then rewrote the README so it actually reads like an open-source project."
+      "title": "A prompt is code you can't compile, so score it against the schema it feeds",
+      "summary": "I turned a personal Garmin-coaching script into real software: a scored prompt, a hermetic test core, and version-driven releases. The reusable idea is treating the agent's prompt as a testable artifact and cross-validating it against the Pydantic schema its output is checked against, so drift is caught in CI instead of crashing a user's briefing in production. Here is the full build."
     }
   ]
 }

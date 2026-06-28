@@ -4,42 +4,42 @@
       "date": "2026-06-24",
       "file": "v0.5.0.md",
       "version": "v0.5.0",
-      "title": "A matrix card for side-by-side comparisons (v0.5.0)",
-      "summary": "Added a matrix card type to ghostwriter: a comparison grid for posts that weigh a few options against each other."
+      "title": "A new card type, and the case for growing a vocabulary over options",
+      "summary": "Ghostwriter got a matrix comparison card. The more interesting part is the rule behind it: when a post shape recurs it earns its own card type, instead of collapsing everything into one configurable mega-card."
     },
     {
       "date": "2026-06-22",
       "file": "v0.4.0.md",
-      "title": "Ghostwriter v0.4: one clean card family, terminal code cards, and a portrait carousel",
-      "summary": "Shipped ghostwriter v0.4.0: redesigned the LinkedIn image cards into one clean, consistent family, added a terminal code-snippet card and a Claude Code session card, and rebuilt the carousel as a portrait, research-backed document (the 4:5 sizing flagged as next in v0.3).",
+      "title": "Cohesion is leverage: pulling a drifting card family onto one base",
+      "summary": "Ghostwriter's image cards had drifted into separate looks. Redesigning them onto one shared base isn't just about brand; the base is what makes the next card type cheap to add and structurally unable to drift. Here's the full build, from tokens to a rendered PNG to the check that keeps the family honest.",
       "version": "v0.4.0"
     },
     {
       "date": "2026-06-10",
       "file": "v0.3.0.md",
-      "title": "Ghostwriter v0.3: a LinkedIn reach playbook, flow diagrams, and carousels",
-      "summary": "Shipped ghostwriter v0.3.0 — researched the LinkedIn algorithm and baked a sourced reach playbook into the skill, added a clean flow-diagram card type, and built end-to-end carousel support (PDFs that LinkedIn renders as swipeable slides), verified by publishing one live.",
+      "title": "Reach is earned in dwell time: encoding LinkedIn's feed rules into a posting tool",
+      "summary": "ghostwriter v0.3.0 turned a pile of researched LinkedIn reach rules into config the skill reads on every draft, and added native carousels by rendering HTML slides into a PDF that LinkedIn shows as a swipeable document. Here is the full build: the playbook as data, the slide-to-PDF render, the documents-API upload, and the check that runs before anything publishes.",
       "version": "v0.3.0"
     },
     {
       "date": "2026-06-08",
       "file": "v0.1.0.md",
-      "title": "Added a ramp card type to the ghostwriter for accelerating progressions",
-      "summary": "Ported an unmerged feature into the consolidated repo via PR: a new 'ramp' visual card — three ascending steps with the last highlighted — for posts about momentum and acceleration.",
+      "title": "An attribution mark the common crops can't remove: mark every region a reshare keeps",
+      "summary": "The LinkedIn ghostwriter got new card templates, but the real lesson was attribution: a corner byline crops off and a tiled watermark looks awful, so the fix was to put a mark on every region a reshare keeps, bracketing the headline with the signature and co-locating the handle with the figure, so a bottom-strip, top-strip, or single-side crop can't take a region without leaving a mark. Here is the full build from card template to rendered PNG.",
       "version": "v0.1.0"
     },
     {
       "date": "2026-06-06",
       "file": "v0.0.1.md",
-      "title": "Treating the LinkedIn skill as code: evals, 100% test coverage, and v0.0.1",
-      "summary": "Made the ghostwriter skill follow its own advice — a skill is code, so I scored its SKILL.md, brought every script to 100% test coverage behind a CI gate, and cut the first versioned release.",
+      "title": "A skill is code: scoring the SKILL.md and testing the glue around it",
+      "summary": "A Claude skill is software, so I held the ghostwriter skill to software's bar: a scorer that structurally grades the SKILL.md as a CI gate, 100% line coverage on its glue scripts by mocking the network and browser boundaries, and an honest line about what coverage doesn't prove.",
       "version": "v0.0.1"
     },
     {
       "date": "2026-06-05",
       "file": "2026-06-05.md",
-      "title": "Optional diagrams and a per-user brand guide for the LinkedIn ghostwriter",
-      "summary": "Added opt-in image generation — Mermaid diagrams and designed cards, rendered locally — to the LinkedIn ghostwriter, plus a personal brand guide that auto-applies your byline."
+      "title": "You already have an image renderer: HTML and Mermaid into PNGs on your own machine",
+      "summary": "Ghostwriter can now attach a rendered diagram or card to a post, and it renders entirely through a local headless browser instead of a third-party service. The two lessons worth keeping are that a browser you already run is a capable image renderer, and that personal styling belongs in config that never touches the shared repo."
     }
   ]
 }

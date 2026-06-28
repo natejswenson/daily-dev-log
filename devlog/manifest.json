@@ -3,36 +3,36 @@
     {
       "date": "2026-06-20",
       "file": "v0.3.1.md",
-      "title": "devlog now fetches tags before it looks for releases (0.3.1)",
-      "summary": "Fixes a discovery bug where /devlog missed a release that was already live, because it read only local git tags and never fetched. Also rides the new shared release CI.",
+      "title": "A clone is a cache: why /devlog missed a release that was already live",
+      "summary": "/devlog discovered releases by listing local git tags and never fetching, so it skipped a release CI had already cut on the remote. The fix is a refresh-before-read discovery step that fetches first and degrades to local tags when it can't.",
       "version": "v0.3.1"
     },
     {
       "date": "2026-06-19",
       "file": "v0.3.0.md",
-      "title": "Reworked devlog to log releases, written in my own voice (0.3.0)",
-      "summary": "devlog 0.3.0 switches from a daily commit log to one entry per version release, and writes each entry from a configurable voice profile so the log sounds like me.",
+      "title": "Logging releases, not days: idempotency, voice-as-config, and untrusted tags",
+      "summary": "devlog switched from a daily commit log to one idempotent entry per release tag, written from a configurable voice profile. Here is the full build: per-project config, validating every tag as untrusted input, making the tag the idempotency key, and resolving voice from an external profile.",
       "version": "v0.3.0"
     },
     {
       "date": "2026-06-08",
       "file": "v0.2.0.md",
-      "title": "Taught devlog to track per-skill feeds inside a monorepo (0.2.0)",
-      "summary": "Added an optional pathFilter to the devlog skill so several projects can share one monorepo repo/path while each tracks only its own subdirectory — the change that lets three consolidated skills keep separate dev-log feeds.",
+      "title": "Scoping a monorepo's history is a view, not a partition",
+      "summary": "After folding three skills into one repo, devlog couldn't tell which skill a commit belonged to. The fix was a pathspec-scoped git log, which raised two things worth teaching: a path filter is a view over shared history, and a path filter is also untrusted input headed for git.",
       "version": "v0.2.0"
     },
     {
       "date": "2026-06-05",
       "file": "v0.1.9.md",
-      "title": "Accessibility pass on the dev-log component, shipped as 0.1.9",
-      "summary": "Made the drop-in React dev-log feed fully keyboard- and screen-reader-accessible with proper disclosure semantics on the expand/collapse, and released it as 0.1.9.",
+      "title": "A copy-paste component spreads its bugs: making the dev-log feed keyboard-accessible",
+      "summary": "The dev-log component shipped with a bare onClick toggle, so everyone who copied it inherited a feed keyboard and screen-reader users couldn't operate. Here is the full fix: the inaccessible before, the disclosure control that replaces it, the focus-visible CSS, and the keyboard test that keeps it honest.",
       "version": "v0.1.9"
     },
     {
       "date": "2026-05-01",
       "file": "2026-05-01.md",
-      "title": "Shipped @natjswenson/devlog on npm — the personal dev-log skill, now shareable",
-      "summary": "Took the personal /devlog Claude Code skill, genericized it, wrapped it in an npx CLI, and shipped it to npm so the folks who pinged on LinkedIn can install it with one command."
+      "title": "Turning a personal tool into a package people can install",
+      "summary": "I shipped my devlog skill to npm as `npx @natjswenson/devlog`. The work that mattered wasn't the feature; it was pulling my own identity out of the code, wiring up an npx CLI with an init command, and reading npm's error codes correctly when publishing went sideways."
     }
   ]
 }
