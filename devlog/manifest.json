@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-06-28",
+      "file": "v0.4.0.md",
+      "title": "Teaching a writing skill to cite its work, and verifying it did",
+      "summary": "devlog 0.4.0 makes /devlog write researched, cited implementation guides instead of changelog summaries. The hard part is not the prompt; it is that language models fabricate citations at high rates, so the real work is a citation floor and a structural contract you verify in code rather than hope the model honors.",
+      "version": "v0.4.0"
+    },
+    {
       "date": "2026-06-20",
       "file": "v0.3.1.md",
       "title": "A clone is a cache: why /devlog missed a release that was already live",
