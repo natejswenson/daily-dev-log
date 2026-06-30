@@ -1,6 +1,34 @@
 {
   "entries": [
     {
+      "date": "2026-06-27",
+      "file": "v0.15.1.md",
+      "version": "v0.15.1",
+      "title": "Let an agent own the output, but verify it three ways before you cut over",
+      "summary": "This release let the agent produce the daily brief as structured data and cut over to it. Trusting a model with structured output needs more than a schema. Here are the three checks that made the switch safe: a typed schema, an advisory grounding signal, and a shadow run against a baseline."
+    },
+    {
+      "date": "2026-06-26",
+      "file": "v0.15.0.md",
+      "version": "v0.15.0",
+      "title": "Two free workflows to run before you make a repo public",
+      "summary": "Before flipping a personal repo to public, turn on the static analysis and supply-chain checks GitHub gives you for free. This release added CodeQL and dependency review. Here is what each one does and how to wire them in."
+    },
+    {
+      "date": "2026-06-26",
+      "file": "v0.14.0.md",
+      "version": "v0.14.0",
+      "title": "Keeping a long-lived dev branch from drifting after squash merges",
+      "summary": "Squash-merging a long-lived dev branch into main makes the next promotion show phantom diffs. This release scripted the fix: force-reset dev onto main after each promotion, including the protected-branch dance. Here is the whole thing."
+    },
+    {
+      "date": "2026-06-25",
+      "file": "v0.13.0.md",
+      "version": "v0.13.0",
+      "title": "Deleting code on purpose, made safe by the tests you write first",
+      "summary": "This release added a chart tool and removed a pile of unused code at the same time. The interesting part is the order: write the tests that pin what you keep, then delete what you do not need. Here is how to do that without holding your breath."
+    },
+    {
       "date": "2026-06-25",
       "file": "v0.12.0.md",
       "version": "v0.12.0",
