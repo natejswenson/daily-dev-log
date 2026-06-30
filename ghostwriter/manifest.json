@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-06-30",
+      "file": "v0.8.0.md",
+      "version": "v0.8.0",
+      "title": "Theming a generated-image system with CSS design tokens",
+      "summary": "Ghostwriter's post images moved from a dark look to a light one by flipping a single CSS class. Here is how to build a themeable system on design tokens, render it to a deterministic PNG, and the one token I forgot that made my text disappear."
+    },
+    {
       "date": "2026-06-24",
       "file": "v0.5.0.md",
       "version": "v0.5.0",
