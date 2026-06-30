@@ -8,6 +8,20 @@
       "summary": "Ghostwriter's post images moved from a dark look to a light one by flipping a single CSS class. Here is how to build a themeable system on design tokens, render it to a deterministic PNG, and the one token I forgot that made my text disappear."
     },
     {
+      "date": "2026-06-29",
+      "file": "v0.7.0.md",
+      "version": "v0.7.0",
+      "title": "A fail-closed gate that won't let a post publish without live sources",
+      "summary": "An LLM that writes confident claims will happily invent the evidence too. This release blocks publishing unless every external claim traces to real, live sources, enforced in code and failing closed. Here is how to build that gate."
+    },
+    {
+      "date": "2026-06-25",
+      "file": "v0.6.0.md",
+      "version": "v0.6.0",
+      "title": "Grounding a writing assistant in a radar and your own git history",
+      "summary": "The hardest part of a writing assistant is the blank page. This release replaced the opening interview with a menu of already-grounded ideas, including ones harvested from your own recent repos by reading Claude Code's session logs. Here is how to build that."
+    },
+    {
       "date": "2026-06-24",
       "file": "v0.5.0.md",
       "version": "v0.5.0",
