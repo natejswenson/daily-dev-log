@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-07-01",
+      "file": "v0.15.2.md",
+      "version": "v0.15.2",
+      "title": "Why a daily sync kept tripping its own rate limit",
+      "summary": "A scheduled job kept logging a 429, and the cause was the logins, not the data calls. Here is how to make a client resume a saved session instead of re-authenticating on every run, plus the failure modes that quietly send it back to a full login."
+    },
+    {
       "date": "2026-06-27",
       "file": "v0.15.1.md",
       "version": "v0.15.1",
