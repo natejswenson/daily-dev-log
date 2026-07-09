@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "date": "2026-07-09",
+      "file": "v1.0.0.md",
+      "title": "No subprocess, no API key: what happens when the agent tailoring your résumé is the same one you're already talking to",
+      "summary": "The resume skill used to shell out to its own copy of Claude just to rewrite bullet points. Cutting that out meant trusting the invoking agent to do the work directly, and building the harness that lets me prove that trust was earned instead of assumed.",
+      "version": "v1.0.0"
+    },
+    {
+      "date": "2026-07-08",
+      "file": "v0.3.0.md",
+      "title": "The error message is the feature: what a rejected LinkedIn scrape taught me about graceful degradation",
+      "summary": "A LinkedIn job URL used to fail with an internal error string no one could act on. Fixing it meant building a real fallback chain end to end: an opt-in stealth path, a hard degrade to plain text, and an error message that tells you exactly what to do next.",
+      "version": "v0.3.0"
+    },
+    {
       "date": "2026-06-21",
       "file": "v0.2.0.md",
       "title": "A benchmark you'll actually run, and a retry that stopped redoing everything",
