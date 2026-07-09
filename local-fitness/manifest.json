@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-07-09",
+      "file": "v0.20.0.md",
+      "version": "v0.20.0",
+      "title": "A coaching line that still ships when the model call doesn't",
+      "summary": "The daily brief PDF grew a Training Plan section with a Claude-written coaching line, and the interesting part isn't the prompt, it's the deterministic fallback that runs when the model call fails."
+    },
+    {
       "date": "2026-07-01",
       "file": "v0.15.2.md",
       "version": "v0.15.2",
