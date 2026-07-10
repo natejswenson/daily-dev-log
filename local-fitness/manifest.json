@@ -2,6 +2,13 @@
   "entries": [
     {
       "date": "2026-07-09",
+      "file": "v0.21.0.md",
+      "version": "v0.21.0",
+      "title": "A CI gate that fails your PR if it's 15% slower",
+      "summary": "I fixed a real N+1-shaped bug in my fitness agent's MCP tools, nine database connections opened for one page of coaching advice, and then had to prove it instead of eyeballing it. Here's the CI-gated benchmark that does the proving, and the two ways it almost lied to me."
+    },
+    {
+      "date": "2026-07-09",
       "file": "v0.20.0.md",
       "version": "v0.20.0",
       "title": "A coaching line that still ships when the model call doesn't",
