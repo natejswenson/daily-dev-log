@@ -1,13 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-07-11",
-      "file": "v0.8.1.md",
-      "version": "v0.8.1",
-      "title": "'This plugin doesn't have any skills': a five-minute bug that took two fixes",
-      "summary": "ghostwriter 0.8.1 fixes why installing it from the new Claude Code plugin marketplace showed zero skills in Claude Desktop. The bug itself was a one-line diagnosis once I compared it against real examples; the harder part was that CI never actually exercised the code path where the second half of the bug was hiding."
-    },
-    {
       "date": "2026-06-30",
       "file": "v0.8.0.md",
       "version": "v0.8.0",
