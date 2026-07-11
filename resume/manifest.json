@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-07-11",
+      "file": "v1.0.1.md",
+      "title": "The release job that couldn't find its own package.json",
+      "summary": "resume 1.0.1 is a packaging fix, but the bug that took the longest to surface wasn't in the plugin itself; it was in the release pipeline, which only reads a skill's version and package.json on the one path that pull-request CI never runs.",
+      "version": "v1.0.1"
+    },
+    {
       "date": "2026-07-09",
       "file": "v1.0.0.md",
       "title": "No subprocess, no API key: what happens when the agent tailoring your résumé is the same one you're already talking to",

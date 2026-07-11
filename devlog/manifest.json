@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-07-11",
+      "file": "v0.4.1.md",
+      "title": "Two directories deep: what 'convention over configuration' actually enforces",
+      "summary": "devlog 0.4.1 fixes a bug where installing the skill from a plugin marketplace left it invisible. The interesting part isn't the fix; it's that the convention was never written down as a rule I could check, so I only found it by diffing every real example I could find.",
+      "version": "v0.4.1"
+    },
+    {
       "date": "2026-06-28",
       "file": "v0.4.0.md",
       "title": "Teaching a writing skill to cite its work, and verifying it did",
