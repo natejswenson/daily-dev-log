@@ -15,13 +15,6 @@
       "summary": "Ghostwriter's voice profile and credentials lived inside its own repo, so a dev checkout and a marketplace-installed copy each needed their own setup. Moving personal config to the home directory collapses that back to one source of truth."
     },
     {
-      "date": "2026-07-11",
-      "file": "v0.8.1.md",
-      "version": "v0.8.1",
-      "title": "The lenient CLI was hiding a real bug from Desktop",
-      "summary": "Claude Desktop showed 'this plugin doesn't have any skills' for a plugin that worked fine in the CLI. The CLI wasn't more correct, it was just more forgiving, and that forgiveness had been hiding a real defect."
-    },
-    {
       "date": "2026-06-30",
       "file": "v0.8.0.md",
       "version": "v0.8.0",
