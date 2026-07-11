@@ -1,6 +1,27 @@
 {
   "entries": [
     {
+      "date": "2026-07-11",
+      "file": "v0.10.0.md",
+      "version": "v0.10.0",
+      "title": "A typo in a CSS class shouldn't need a human to catch it",
+      "summary": "A rendered card and its stylesheet are two files that only agree by convention, nothing in HTML or CSS enforces it. Here's how to write a fast, deterministic test that catches the drift before a render silently ships unstyled."
+    },
+    {
+      "date": "2026-07-11",
+      "file": "v0.9.0.md",
+      "version": "v0.9.0",
+      "title": "Your app's personal config doesn't belong next to your app's code",
+      "summary": "Ghostwriter's voice profile and credentials lived inside its own repo, so a dev checkout and a marketplace-installed copy each needed their own setup. Moving personal config to the home directory collapses that back to one source of truth."
+    },
+    {
+      "date": "2026-07-11",
+      "file": "v0.8.1.md",
+      "version": "v0.8.1",
+      "title": "The lenient CLI was hiding a real bug from Desktop",
+      "summary": "Claude Desktop showed 'this plugin doesn't have any skills' for a plugin that worked fine in the CLI. The CLI wasn't more correct, it was just more forgiving, and that forgiveness had been hiding a real defect."
+    },
+    {
       "date": "2026-06-30",
       "file": "v0.8.0.md",
       "version": "v0.8.0",
