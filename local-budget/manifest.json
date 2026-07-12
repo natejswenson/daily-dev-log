@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "date": "2026-07-11",
+      "file": "v0.1.0.md",
+      "title": "Let an agent read your bank statements without handing it your PII",
+      "summary": "A local MCP server turns your bank statements into tools an AI agent can call. Here is how to build one where the model gets answers, never raw account numbers.",
+      "version": "v0.1.0"
+    }
+  ]
+}
