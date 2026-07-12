@@ -18,63 +18,63 @@
       "date": "2026-06-30",
       "file": "v0.8.0.md",
       "version": "v0.8.0",
-      "title": "Theming a generated-image system with CSS design tokens",
-      "summary": "Ghostwriter's post images moved from a dark look to a light one by flipping a single CSS class. Here is how to build a themeable system on design tokens, render it to a deterministic PNG, and the one token I forgot that made my text disappear."
+      "title": "One class, every token: theming a visual system with CSS custom properties",
+      "summary": "Ghostwriter's post images moved from a dark look to a light one by changing a single CSS class. Here's how to build a token-driven theme switch, render it to a deterministic PNG, and catch the one missing token that makes text disappear."
     },
     {
       "date": "2026-06-29",
       "file": "v0.7.0.md",
       "version": "v0.7.0",
-      "title": "A fail-closed gate that won't let a post publish without live sources",
-      "summary": "An LLM that writes confident claims will happily invent the evidence too. This release blocks publishing unless every external claim traces to real, live sources, enforced in code and failing closed. Here is how to build that gate."
+      "title": "Build a publish gate that fails closed, even when the input is garbage",
+      "summary": "An agent that writes a confident claim will just as confidently skip checking it. Version 0.7.0 adds a code gate that blocks publishing until every outside-world claim traces to real, live sources, and it has to survive garbage input and a harness that lies about testing it."
     },
     {
       "date": "2026-06-25",
       "file": "v0.6.0.md",
       "version": "v0.6.0",
-      "title": "Grounding a writing assistant in a radar and your own git history",
-      "summary": "The hardest part of a writing assistant is the blank page. This release replaced the opening interview with a menu of already-grounded ideas, including ones harvested from your own recent repos by reading Claude Code's session logs. Here is how to build that."
+      "title": "Parsing the session logs Claude Code warns you not to parse",
+      "summary": "Claude Code's own docs say its session transcripts are an internal format that can change on any release, yet discovering what you shipped recently has no sanctioned API. Here is how to read the logs anyway, defensively enough to survive the warning."
     },
     {
       "date": "2026-06-24",
       "file": "v0.5.0.md",
       "version": "v0.5.0",
-      "title": "A new card type, and the case for growing a vocabulary over options",
-      "summary": "Ghostwriter got a matrix comparison card. The more interesting part is the rule behind it: when a post shape recurs it earns its own card type, instead of collapsing everything into one configurable mega-card."
+      "title": "A plugin registry made of file names, kept honest by one test",
+      "summary": "Ghostwriter's new matrix card type shipped as one new file, with no registry code touched. Here's how a naming convention can stand in for a plugin registry, and the test that keeps it from shipping half-wired or quietly duplicated."
     },
     {
       "date": "2026-06-22",
       "file": "v0.4.0.md",
-      "title": "Cohesion is leverage: pulling a drifting card family onto one base",
-      "summary": "Ghostwriter's image cards had drifted into separate looks. Redesigning them onto one shared base isn't just about brand; the base is what makes the next card type cheap to add and structurally unable to drift. Here's the full build, from tokens to a rendered PNG to the check that keeps the family honest.",
+      "title": "One stylesheet, many card types: a themeable render pipeline with CSS variables and Playwright",
+      "summary": "Ghostwriter's image cards got pulled onto one shared base and grew a portrait carousel with a progress bar. The mechanism behind it, CSS custom properties feeding a headless-browser render pipeline, is a pattern you can reuse for any HTML-to-image or HTML-to-PDF generator.",
       "version": "v0.4.0"
     },
     {
       "date": "2026-06-10",
       "file": "v0.3.0.md",
-      "title": "Reach is earned in dwell time: encoding LinkedIn's feed rules into a posting tool",
-      "summary": "ghostwriter v0.3.0 turned a pile of researched LinkedIn reach rules into config the skill reads on every draft, and added native carousels by rendering HTML slides into a PDF that LinkedIn shows as a swipeable document. Here is the full build: the playbook as data, the slide-to-PDF render, the documents-API upload, and the check that runs before anything publishes.",
+      "title": "A PDF is a slide deck LinkedIn will swipe through for you",
+      "summary": "ghostwriter v0.3.0 added carousel support: a headless-browser render step that turns HTML slides into a single PDF, and a publisher path that uploads it through a document API LinkedIn renders as a swipeable carousel. Here's the render-and-ship pipeline, built generic enough for any chunked document upload.",
       "version": "v0.3.0"
     },
     {
       "date": "2026-06-08",
       "file": "v0.1.0.md",
-      "title": "An attribution mark the common crops can't remove: mark every region a reshare keeps",
-      "summary": "The LinkedIn ghostwriter got new card templates, but the real lesson was attribution: a corner byline crops off and a tiled watermark looks awful, so the fix was to put a mark on every region a reshare keeps, bracketing the headline with the signature and co-locating the handle with the figure, so a bottom-strip, top-strip, or single-side crop can't take a region without leaving a mark. Here is the full build from card template to rendered PNG.",
+      "title": "Rendering HTML cards to PNG with a headless browser, and why the bars don't have to be to scale",
+      "summary": "Ghostwriter's 0.1.0 release added one new card type: three ascending bars for an accelerating progression, with the bar heights fixed for effect rather than computed from the numbers next to them. Building it is a clean example of a small, reusable system: a CSS brand guide, a headless-browser render step, and a verification step that checks the honesty claim is actually true.",
       "version": "v0.1.0"
     },
     {
       "date": "2026-06-06",
       "file": "v0.0.1.md",
-      "title": "A skill is code: scoring the SKILL.md and testing the glue around it",
-      "summary": "A Claude skill is software, so I held the ghostwriter skill to software's bar: a scorer that structurally grades the SKILL.md as a CI gate, 100% line coverage on its glue scripts by mocking the network and browser boundaries, and an honest line about what coverage doesn't prove.",
+      "title": "Score a prompt file like code, and give its glue full test coverage",
+      "summary": "The ghostwriter skill's first versioned release made a markdown instruction file gradeable by CI and pushed its automation scripts to 100% line coverage. The two techniques worth stealing: a pass/fail scorer over frontmatter and body text, and monkeypatching a dependency your code doesn't even import until the function runs.",
       "version": "v0.0.1"
     },
     {
       "date": "2026-06-05",
       "file": "2026-06-05.md",
-      "title": "You already have an image renderer: HTML and Mermaid into PNGs on your own machine",
-      "summary": "Ghostwriter can now attach a rendered diagram or card to a post, and it renders entirely through a local headless browser instead of a third-party service. The two lessons worth keeping are that a browser you already run is a capable image renderer, and that personal styling belongs in config that never touches the shared repo."
+      "title": "A headless browser doubles as an image renderer, once you wait for the right signal",
+      "summary": "Ghostwriter can now attach a locally rendered diagram or card to a post, and the two techniques worth taking are waiting on a real completion signal instead of network idleness, and keeping personal styling in a gitignored file a stranger's clone never has to see."
     }
   ]
 }
