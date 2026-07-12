@@ -4,126 +4,126 @@
       "date": "2026-07-09",
       "file": "v0.21.0.md",
       "version": "v0.21.0",
-      "title": "A CI gate that fails your PR if it's 15% slower",
-      "summary": "I fixed a real N+1-shaped bug in my fitness agent's MCP tools, nine database connections opened for one page of coaching advice, and then had to prove it instead of eyeballing it. Here's the CI-gated benchmark that does the proving, and the two ways it almost lied to me."
+      "title": "Benchmarks that count connections, not just milliseconds",
+      "summary": "One of my fitness agent's MCP tools was opening nine SQLite connections to answer a single question. The fix was routine; this walkthrough builds the part that outlives it, a pytest-benchmark harness that asserts connection counts, compares against a committed baseline, and fails any PR that regresses either."
     },
     {
       "date": "2026-07-09",
       "file": "v0.20.0.md",
       "version": "v0.20.0",
-      "title": "A coaching line that still ships when the model call doesn't",
-      "summary": "The daily brief PDF grew a Training Plan section with a Claude-written coaching line, and the interesting part isn't the prompt, it's the deterministic fallback that runs when the model call fails."
+      "title": "Never let one LLM call sink a whole report",
+      "summary": "My fitness agent's daily PDF gained a Claude-written coaching line, which put a network call in the middle of a synchronous render. Here's how to pair that call with a deterministic fallback, and how to prove the fallback works before the day you need it."
     },
     {
       "date": "2026-07-01",
       "file": "v0.15.2.md",
       "version": "v0.15.2",
-      "title": "Why a daily sync kept tripping its own rate limit",
-      "summary": "A scheduled job kept logging a 429, and the cause was the logins, not the data calls. Here is how to make a client resume a saved session instead of re-authenticating on every run, plus the failure modes that quietly send it back to a full login."
+      "title": "Why the container synced fine while the host kept hitting 429s",
+      "summary": "The same sync code got rate-limited on the host and ran clean in the container, and the difference was an env-var fallback buried in a client library. How to make session caching explicit and pin it with a test so it can't silently regress."
     },
     {
       "date": "2026-06-27",
       "file": "v0.15.1.md",
       "version": "v0.15.1",
-      "title": "Let an agent own the output, but verify it three ways before you cut over",
-      "summary": "This release let the agent produce the daily brief as structured data and cut over to it. Trusting a model with structured output needs more than a schema. Here are the three checks that made the switch safe: a typed schema, an advisory grounding signal, and a shadow run against a baseline."
+      "title": "Move the deterministic half of your LLM prompt into code",
+      "summary": "When one prompt is doing eleven jobs, most of them have a right answer and don't need a model. Here is how to split an LLM feature into a tested planner, one toolless model call, and an advisory grounding check, then prove the cutover is safe before you flip it."
     },
     {
       "date": "2026-06-26",
       "file": "v0.15.0.md",
       "version": "v0.15.0",
-      "title": "Two free workflows to run before you make a repo public",
-      "summary": "Before flipping a personal repo to public, turn on the static analysis and supply-chain checks GitHub gives you for free. This release added CodeQL and dependency review. Here is what each one does and how to wire them in."
+      "title": "Wiring up CodeQL and dependency review before a repo goes public",
+      "summary": "Before making a repo public, wire in the two security workflows GitHub gives you free: CodeQL for the code you wrote, dependency review for the code you pull in. Setup, verification with real output, and the traps that make both silently useless."
     },
     {
       "date": "2026-06-26",
       "file": "v0.14.0.md",
       "version": "v0.14.0",
-      "title": "Keeping a long-lived dev branch from drifting after squash merges",
-      "summary": "Squash-merging a long-lived dev branch into main makes the next promotion show phantom diffs. This release scripted the fix: force-reset dev onto main after each promotion, including the protected-branch dance. Here is the whole thing."
+      "title": "Automating the fix for squash-merge drift on a long-lived branch",
+      "summary": "A squash-merged dev-to-main promotion leaves the two branches diverged, so the next promotion PR shows commits that already shipped. Here's a script and workflow that resets the branch automatically, including the branch-protection dance it has to do safely."
     },
     {
       "date": "2026-06-25",
       "file": "v0.13.0.md",
       "version": "v0.13.0",
-      "title": "Deleting code on purpose, made safe by the tests you write first",
-      "summary": "This release added a chart tool and removed a pile of unused code at the same time. The interesting part is the order: write the tests that pin what you keep, then delete what you do not need. Here is how to do that without holding your breath."
+      "title": "A covered line and a tested line are not the same thing",
+      "summary": "This release deleted a pile of confirmed-dead code and raised test coverage on the parts that were genuinely thin. The useful part wasn't the percentage, it was catching the tests that were only pretending to check something."
     },
     {
       "date": "2026-06-25",
       "file": "v0.12.0.md",
       "version": "v0.12.0",
-      "title": "Giving a solo project a real branch model (and why it isn't overkill)",
-      "summary": "Why a one-person, agent-built project still earns a feature→dev→main branch model with automatic release tagging, the CI wiring that cuts the tag only when the version is new, and the dependency drift a single major bump surfaced."
+      "title": "Chaining a release to CI's own success, not a raw push",
+      "summary": "How to wire a GitHub release off a green CI run instead of a push, guard it so an already-shipped version can't double-release, and the default-branch trap that catches anyone wiring workflow_run for the first time."
     },
     {
       "date": "2026-06-23",
       "file": "v0.11.0.md",
       "version": "v0.11.0",
-      "title": "Handing an AI client a persona over MCP, and learning to resolve it late",
-      "summary": "The coach voice now follows me into Claude Code through the MCP server's instructions field. Getting it right meant resolving the persona at connect time instead of import time, and failing safe when the lookup misses. Here is the full build."
+      "title": "Live MCP server instructions that survive a fresh clone",
+      "summary": "An MCP server can hand its client a system-prompt hint at initialize. This build wires that field to a SQLite setting, resolves it fresh on every connect, and fails open when the read misses, so a config change lands without a restart and a fresh clone still starts."
     },
     {
       "date": "2026-06-23",
       "file": "v0.10.0.md",
       "version": "v0.10.0",
-      "title": "Selectable coach tones, and making the model's dials actually do something",
-      "summary": "The daily brief's voice is now a profile you choose. The real work wasn't the personas, it was making the tuning numbers deterministic instead of decorative, and testing all four tones against expectations rather than reading a sample."
+      "title": "A prompt dial isn't a setting until code reads it too",
+      "summary": "My fitness coach's brief had one hardcoded voice. Making it four selectable tones was the easy part; the real work was making sure a numeric 'harshness' dial did something a test could catch, not just something the model might notice."
     },
     {
       "date": "2026-06-23",
       "file": "v0.9.0.md",
       "version": "v0.9.0",
-      "title": "A settings resolver that defaults to the present and fails safe on bad input",
-      "summary": "Five coaching decisions were hardcoded as my preferences. Turning them into user settings came down to one resolution order over three existing config homes, defaults that exactly reproduce the old behavior, and validation that falls back instead of silently grading you wrong."
+      "title": "A settings resolver that always falls back to what already worked",
+      "summary": "Five coaching preferences were hardcoded into a public repo as if they were universal truths. Turning them into user settings meant building a small resolver: one precedence order across three config layers, where every bad input falls back to the value that already worked instead of raising."
     },
     {
       "date": "2026-06-23",
       "file": "v0.8.0.md",
       "version": "v0.8.0",
-      "title": "Grade the state, not the calendar: a date is a stand-in for the question you actually care about",
-      "summary": "Two grading bugs traced to the same mistake: the grader read the calendar instead of the outcome, so today's finished run showed pending and a recovery walk read as a miss. The fix is a small decision table that grades by what actually happened, plus one verdict the UI reads instead of recomputing."
+      "title": "Build a status grader that never gets confused by today",
+      "summary": "A training-plan feature graded today's finished workout as still pending, because the code asked the calendar instead of the outcome. Here's how to build a status grader that reads outcomes first, holds judgment only where the day is genuinely unsettled, and hands the UI one verdict it never has to second-guess."
     },
     {
       "date": "2026-06-22",
       "file": "v0.7.0.md",
       "version": "v0.7.0",
-      "title": "Give the agent a tool, not a shell",
-      "summary": "My fitness agent answered a plan question by opening a shell and writing raw SQL. The fix was not a better prompt, it was a missing tool. Here is the full build of the high-level tool that replaced the improvisation: a data model, a per-day grading rule with one honest boundary, the single tool that returns the whole graded plan, and the test that defends it."
+      "title": "Why your agent's tool needs to say pending, not missed, when data lags",
+      "summary": "My fitness agent's plan tool needed to tell the difference between a workout that failed and one my Garmin sync simply hasn't caught up to yet. Here's how to build a single agent tool that grades real-world state against a data freshness boundary instead of the calendar."
     },
     {
       "date": "2026-06-20",
       "file": "v0.6.0.md",
       "version": "v0.6.0",
-      "title": "The brief got ~2.5-3x faster, and the fancy idea lost to a measurement",
-      "summary": "The daily brief dropped from about four minutes to roughly 80 seconds at equal-or-better quality, about 2.5-3x. The parallel-fan-out plan I designed lost to a profiler, the real lever was one setting, and less model reasoning made the output better, not worse. Here is the full build: profile the phases, dial reasoning effort to low, render tables in code, and confirm with a blind A/B."
+      "title": "The setting that fixed a slow AI brief was hiding behind one that silently did nothing",
+      "summary": "A Claude-generated daily fitness brief went from about four minutes to under 90 seconds, but not from the parallel rewrite I designed. Here's how to gate a fix behind a kill criterion, find out which agent settings are real versus silently inert, and confirm the trade with a blind judge instead of a hunch."
     },
     {
       "date": "2026-06-18",
       "file": "v0.5.0.md",
       "version": "v0.5.0",
-      "title": "When the agent can read and write everything, the server stops running the model",
-      "summary": "Once the agent can both read and write local-fitness over MCP, the synthesis no longer needs to live inside the server. I moved the daily brief out to a client agent that drives the same MCP tools, leaving the server as pure data and deterministic compute. Here is the full build, plus the siege finding that a 'read-only' SQL guard wasn't read-only."
+      "title": "Give your MCP server a write tool, then delete the model from it",
+      "summary": "Once an MCP server can write back as well as read, the model has no reason to run inside it anymore. Here's how to build that write tool, and the exact way a 'read-only' guard fails if you enforce it with a keyword check instead of at the connection itself."
     },
     {
       "date": "2026-06-17",
       "file": "v0.3.0.md",
       "version": "v0.3.0",
-      "title": "Make MCP the front door: one server, a read-only fence, and a localhost that still needs locks",
-      "summary": "I put my self-hosted fitness data behind the Model Context Protocol so I can query and update it straight from an AI client. Here is the full build: defining tools and resources, serving one server over two transports, fencing the brief loop to read-only at the structure level, and the security a localhost MCP server actually needs."
+      "title": "Reuse your Claude Agent SDK tool server as a standalone MCP endpoint",
+      "summary": "I exposed local-fitness's in-process Claude agent tools to real MCP clients over HTTP and stdio without writing a second copy of them, then closed the three gaps a network-reachable localhost server actually has that a subprocess-launched one doesn't."
     },
     {
       "date": "2026-06-15",
       "file": "2026-06-15.md",
-      "title": "Guarantees the model can't break: shipping AI training plans design-first",
-      "summary": "I shipped goal-driven training plans where the AI can draft but never decide, a single active plan is enforced by the database itself, and adherence is graded off the last day data actually synced. The throughline: put the things you can't afford to get wrong into structure, not into prompts or discipline."
+      "title": "Make the agent's only write a draft, and let the database enforce the rest",
+      "summary": "I gave an AI agent its first real database write path by making the dangerous action unreachable instead of trusting it to behave: the tool schema never accepts a status field, and a partial unique index backstops the single-active-row rule even if the application code has a bug. Here's how to build the same draft-only boundary for any agent that writes to your own data."
     },
     {
       "date": "2026-06-06",
       "file": "v0.1.0.md",
       "version": "v0.1.0",
-      "title": "A prompt is code you can't compile, so score it against the schema it feeds",
-      "summary": "I turned a personal Garmin-coaching script into real software: a scored prompt, a hermetic test core, and version-driven releases. The reusable idea is treating the agent's prompt as a testable artifact and cross-validating it against the Pydantic schema its output is checked against, so drift is caught in CI instead of crashing a user's briefing in production. Here is the full build."
+      "title": "Score your prompt against the types your code already trusts",
+      "summary": "I turned a personal Garmin-coaching script into real software: a pytest suite behind a coverage gate, CI wiring, and a scorer that cross-validates the agent's prompt against the typed contract its own output has to satisfy. Here's how to build that check for any prompt-driven agent."
     }
   ]
 }
