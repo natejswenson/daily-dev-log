@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "date": "2026-07-12",
+      "file": "v0.6.0.md",
+      "title": "How to turn an editorial rule into a lint rule",
+      "summary": "I rewrote 38 blog posts against a writing contract and watched one rule get skipped over and over: every source in the bibliography must also be cited in the body. The rule was written down; nothing enforced it. Here's how to promote a style-guide sentence into a deterministic check your build can fail.",
+      "version": "v0.6.0"
+    },
+    {
+      "date": "2026-07-12",
+      "file": "v0.5.2.md",
+      "title": "When three releases land on one day, date alone can't sort your feed",
+      "summary": "My dev-log feed sorted newest-first by date, which worked until the day I cut three releases before dinner and the newest one rendered at the bottom. The fix is a two-key comparator: date first, version as the tie-break, with the version segments compared as numbers. Here's how to build one that survives v0.10.0.",
+      "version": "v0.5.2"
+    },
+    {
       "date": "2026-07-11",
       "file": "v0.5.1.md",
       "title": "npx ran my CLI and nothing happened",
