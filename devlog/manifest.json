@@ -24,50 +24,50 @@
     {
       "date": "2026-07-11",
       "file": "v0.4.1.md",
-      "title": "Two directories deep: what 'convention over configuration' actually enforces",
-      "summary": "One root cause, three skills, two bugs: installing this monorepo's plugins left every one of them invisible in Claude Desktop, and the release pipeline that tags their versions had the exact same class of bug hiding one layer deeper. This is the full story, not three separate write-ups for what was really one fix.",
+      "title": "Building a Claude Code plugin marketplace that survives its own release pipeline",
+      "summary": "A plugin marketplace's skill-discovery rule lives entirely in a directory shape, not a manifest field, so it has to be built, lint-checked, and released against that same shape. Here's how to do all three without a CI job that lies to you.",
       "version": "v0.4.1"
     },
     {
       "date": "2026-06-28",
       "file": "v0.4.0.md",
-      "title": "Teaching a writing skill to cite its work, and verifying it did",
-      "summary": "devlog 0.4.0 makes /devlog write researched, cited implementation guides instead of changelog summaries. The hard part is not the prompt; it is that language models fabricate citations at high rates, so the real work is a citation floor and a structural contract you verify in code rather than hope the model honors.",
+      "title": "Turning 'cite your sources' into a contract an agent can't quietly ignore",
+      "summary": "devlog 0.4.0 rewrote the instructions behind /devlog so every release post has to become a researched, cited implementation guide. The instructions alone don't guarantee it happens, so here's how to turn a soft citation ask into a structured contract and a checker that catches it when the model doesn't comply.",
       "version": "v0.4.0"
     },
     {
       "date": "2026-06-20",
       "file": "v0.3.1.md",
-      "title": "A clone is a cache: why /devlog missed a release that was already live",
-      "summary": "/devlog discovered releases by listing local git tags and never fetching, so it skipped a release CI had already cut on the remote. The fix is a refresh-before-read discovery step that fetches first and degrades to local tags when it can't.",
+      "title": "Give your CLI script two lives: a program and a module",
+      "summary": "devlog's v0.3.1 test suite needed bin/devlog.js's logic importable without also running its command-line dispatch. Here's the guard pattern that split the two, and the symlink trap that broke it again a few weeks later.",
       "version": "v0.3.1"
     },
     {
       "date": "2026-06-19",
       "file": "v0.3.0.md",
-      "title": "Logging releases, not days: idempotency, voice-as-config, and untrusted tags",
-      "summary": "devlog switched from a daily commit log to one idempotent entry per release tag, written from a configurable voice profile. Here is the full build: per-project config, validating every tag as untrusted input, making the tag the idempotency key, and resolving voice from an external profile.",
+      "title": "What it takes to treat a git tag as untrusted input",
+      "summary": "devlog switched from a daily commit log to one entry per release tag. Building that meant treating every tag name as untrusted input, picking the right previous release even when prereleases are mixed in, and making the whole run safe to repeat.",
       "version": "v0.3.0"
     },
     {
       "date": "2026-06-08",
       "file": "v0.2.0.md",
-      "title": "Scoping a monorepo's history is a view, not a partition",
-      "summary": "After folding three skills into one repo, devlog couldn't tell which skill a commit belonged to. The fix was a pathspec-scoped git log, which raised two things worth teaching: a path filter is a view over shared history, and a path filter is also untrusted input headed for git.",
+      "title": "Filtering a monorepo's git log without trusting the filter",
+      "summary": "v0.2.0 let one devlog config serve several projects out of a shared monorepo. Getting there safely is a short lesson in two habits: scoping git history correctly, and treating any value headed for a shell command as input you don't trust yet.",
       "version": "v0.2.0"
     },
     {
       "date": "2026-06-05",
       "file": "v0.1.9.md",
-      "title": "A copy-paste component spreads its bugs: making the dev-log feed keyboard-accessible",
-      "summary": "The dev-log component shipped with a bare onClick toggle, so everyone who copied it inherited a feed keyboard and screen-reader users couldn't operate. Here is the full fix: the inaccessible before, the disclosure control that replaces it, the focus-visible CSS, and the keyboard test that keeps it honest.",
+      "title": "A bare onClick isn't a button: making a shared React toggle keyboard-accessible",
+      "summary": "The drop-in React component that renders a dev-log feed toggled each entry with a plain onClick, so every site that copied it inherited a feed keyboard and screen-reader users couldn't operate. Here's how to rebuild that toggle as a real ARIA disclosure control, and the test that proves the keyboard path works.",
       "version": "v0.1.9"
     },
     {
       "date": "2026-05-01",
       "file": "2026-05-01.md",
-      "title": "Turning a personal tool into a package people can install",
-      "summary": "I shipped my devlog skill to npm as `npx @natjswenson/devlog`. The work that mattered wasn't the feature; it was pulling my own identity out of the code, wiring up an npx CLI with an init command, and reading npm's error codes correctly when publishing went sideways."
+      "title": "Turning a personal script into a one-command npx installer",
+      "summary": "Making a working personal tool installable by a stranger means declaring a real executable, prompting for defaults instead of demanding a config edit, and verifying the tarball before you trust a publish. Here's what that took, including the two ways npm quietly rejected the first attempt."
     }
   ]
 }
