@@ -3,29 +3,29 @@
     {
       "date": "2026-07-09",
       "file": "v1.0.0.md",
-      "title": "No subprocess, no API key: what happens when the agent tailoring your résumé is the same one you're already talking to",
-      "summary": "The resume skill used to shell out to its own copy of Claude just to rewrite bullet points. Cutting that out meant trusting the invoking agent to do the work directly, and building the harness that lets me prove that trust was earned instead of assumed.",
+      "title": "Let the agent judge, let the script verify: a pattern for self-checking skills",
+      "summary": "The resume skill's 1.0.0 deleted its own subprocess LLM call and let the invoking agent do the tailoring directly. The part worth stealing is what replaced the trust that used to live in that subprocess: a deterministic checkpoint plus a budget-capped judge, and the shape you can build for any skill that mixes judgment with facts.",
       "version": "v1.0.0"
     },
     {
       "date": "2026-07-08",
       "file": "v0.3.0.md",
-      "title": "The error message is the feature: what a rejected LinkedIn scrape taught me about graceful degradation",
-      "summary": "A LinkedIn job URL used to fail with an internal error string no one could act on. Fixing it meant building a real fallback chain end to end: an opt-in stealth path, a hard degrade to plain text, and an error message that tells you exactly what to do next.",
+      "title": "An opt-in flag that can't quietly grow teeth",
+      "summary": "Adding an opt-in escape hatch to a domain blocklist looks like a one-line change until you ask what happens the day someone else adds a second domain to that same list.",
       "version": "v0.3.0"
     },
     {
       "date": "2026-06-21",
       "file": "v0.2.0.md",
-      "title": "A benchmark you'll actually run, and a retry that stopped redoing everything",
-      "summary": "The resume skill got a benchmark cheap and stable enough to run on every change, and a retry path roughly seven times faster because it only redoes the part that changed. Here is the full build: fixtures and a rubric, a judge that runs through the Claude CLI, a gate that watches only the treatment, and an incremental retry.",
+      "title": "Adding a free LLM judge to your build, without trusting it blindly",
+      "summary": "The resume skill's v0.2.0 benchmark scores its output with two LLM judges that run through the Claude CLI instead of the metered API, for zero marginal cost. Making that safe took a timeout that actually kills the child process, a wrapper that fails open instead of crashing the build, and a hard line between what the judge gets to block and what it only gets to report.",
       "version": "v0.2.0"
     },
     {
       "date": "2026-06-07",
       "file": "v0.1.1.md",
-      "title": "When thinking makes the model slower and worse: turning extended reasoning off for extraction",
-      "summary": "A four-bullet résumé produced ~800 characters of JSON but billed 16,000 output tokens; the rest was extended thinking the task never needed. Turning it off, moving the self-audit into deterministic code, and letting an eval sweep settle it made a real run about 13x faster.",
+      "title": "The thinking tokens a CLI subprocess never needed to spend",
+      "summary": "A résumé-tailoring skill that shells out to the claude CLI was burning 11-15k thinking tokens on an 800-token JSON answer. The fix was one environment variable, a validation step that moved out of the prompt and into code, and a sweep that proved the fix instead of assuming it.",
       "version": "v0.1.1"
     }
   ]
