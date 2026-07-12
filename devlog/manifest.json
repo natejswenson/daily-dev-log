@@ -2,17 +2,10 @@
   "entries": [
     {
       "date": "2026-07-11",
-      "file": "v0.4.1.md",
-      "title": "Two directories deep: what 'convention over configuration' actually enforces",
-      "summary": "One root cause, three skills, two bugs: installing this monorepo's plugins left every one of them invisible in Claude Desktop, and the release pipeline that tags their versions had the exact same class of bug hiding one layer deeper. This is the full story, not three separate write-ups for what was really one fix.",
-      "version": "v0.4.1"
-    },
-    {
-      "date": "2026-07-11",
-      "file": "v0.4.2.md",
-      "title": "The fallback that pointed at a directory that never existed",
-      "summary": "devlog's voice-profile fallback pointed at a path its sibling tool never actually used, so the fallback could never fire and nothing ever errored. A small patch, and a useful lesson about tools that share files by convention.",
-      "version": "v0.4.2"
+      "file": "v0.5.1.md",
+      "title": "npx ran my CLI and nothing happened",
+      "summary": "Every npx invocation of my CLI exited 0 with no output, while running the file directly worked fine. The bug was one strict-equality check that can't survive npm's bin symlink. Here's how to detect 'am I the main module' correctly in an ESM CLI.",
+      "version": "v0.5.1"
     },
     {
       "date": "2026-07-11",
@@ -23,10 +16,17 @@
     },
     {
       "date": "2026-07-11",
-      "file": "v0.5.1.md",
-      "title": "npx ran my CLI and nothing happened",
-      "summary": "Every npx invocation of my CLI exited 0 with no output, while running the file directly worked fine. The bug was one strict-equality check that can't survive npm's bin symlink. Here's how to detect 'am I the main module' correctly in an ESM CLI.",
-      "version": "v0.5.1"
+      "file": "v0.4.2.md",
+      "title": "The fallback that pointed at a directory that never existed",
+      "summary": "devlog's voice-profile fallback pointed at a path its sibling tool never actually used, so the fallback could never fire and nothing ever errored. A small patch, and a useful lesson about tools that share files by convention.",
+      "version": "v0.4.2"
+    },
+    {
+      "date": "2026-07-11",
+      "file": "v0.4.1.md",
+      "title": "Two directories deep: what 'convention over configuration' actually enforces",
+      "summary": "One root cause, three skills, two bugs: installing this monorepo's plugins left every one of them invisible in Claude Desktop, and the release pipeline that tags their versions had the exact same class of bug hiding one layer deeper. This is the full story, not three separate write-ups for what was really one fix.",
+      "version": "v0.4.1"
     },
     {
       "date": "2026-06-28",
