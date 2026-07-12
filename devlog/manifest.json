@@ -8,6 +8,27 @@
       "version": "v0.4.1"
     },
     {
+      "date": "2026-07-11",
+      "file": "v0.4.2.md",
+      "title": "The fallback that pointed at a directory that never existed",
+      "summary": "devlog's voice-profile fallback pointed at a path its sibling tool never actually used, so the fallback could never fire and nothing ever errored. A small patch, and a useful lesson about tools that share files by convention.",
+      "version": "v0.4.2"
+    },
+    {
+      "date": "2026-07-11",
+      "file": "v0.5.0.md",
+      "title": "Give the agent a plan, not a shell",
+      "summary": "I rebuilt this dev log's skill so the LLM stops running twenty hand-rolled bash steps and starts consuming one JSON plan from a tested CLI. Here's the pattern: put everything deterministic in code you can test, and put everything non-deterministic behind a lint gate and a budget-capped judge.",
+      "version": "v0.5.0"
+    },
+    {
+      "date": "2026-07-11",
+      "file": "v0.5.1.md",
+      "title": "npx ran my CLI and nothing happened",
+      "summary": "Every npx invocation of my CLI exited 0 with no output, while running the file directly worked fine. The bug was one strict-equality check that can't survive npm's bin symlink. Here's how to detect 'am I the main module' correctly in an ESM CLI.",
+      "version": "v0.5.1"
+    },
+    {
       "date": "2026-06-28",
       "file": "v0.4.0.md",
       "title": "Teaching a writing skill to cite its work, and verifying it did",
