@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-07-13",
+      "file": "v0.22.2.md",
+      "version": "v0.22.2",
+      "title": "Let the model phrase the judgment, not derive it",
+      "summary": "My analysis tools were handing the LLM raw numbers and a legend, then trusting it to classify. Here is how I pulled every judgment into a pure, tested Python module so the model only has to write the sentence."
+    },
+    {
       "date": "2026-07-09",
       "file": "v0.21.0.md",
       "version": "v0.21.0",
@@ -13,6 +20,13 @@
       "version": "v0.20.0",
       "title": "Never let one LLM call sink a whole report",
       "summary": "My fitness agent's daily PDF gained a Claude-written coaching line, which put a network call in the middle of a synchronous render. Here's how to pair that call with a deterministic fallback, and how to prove the fallback works before the day you need it."
+    },
+    {
+      "date": "2026-07-07",
+      "file": "v0.16.0.md",
+      "version": "v0.16.0",
+      "title": "Giving an MCP agent a way to refresh its own data",
+      "summary": "My fitness agent could read the database but never freshen it. Here is how to add a side-effectful sync tool to an MCP server, keep it gap-aware, and keep it out of the loops that should stay read-only."
     },
     {
       "date": "2026-07-01",
