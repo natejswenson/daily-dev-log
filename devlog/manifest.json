@@ -1,6 +1,28 @@
 {
   "entries": [
     {
+      "date": "2026-07-16",
+      "file": "v0.8.1.md",
+      "title": "Rendering cover art locally with a headless browser, and why the first batch all looked the same",
+      "summary": "Every dev-log post now gets a custom cover image rendered locally by a headless browser instead of a hosted image API. The rendering pipeline was the easy part; getting the font to load before the screenshot, and getting each cover to actually look different, took the real debugging.",
+      "version": "v0.8.1",
+      "tags": [
+        "playwright",
+        "headless-browser",
+        "svg",
+        "image-generation",
+        "css",
+        "font-loading",
+        "png",
+        "static-sites",
+        "devlog"
+      ],
+      "cover": {
+        "file": "v0.8.1.png",
+        "bytes": 21636
+      }
+    },
+    {
       "date": "2026-07-12",
       "file": "v0.6.0.md",
       "title": "How to turn an editorial rule into a lint rule",
