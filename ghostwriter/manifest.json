@@ -5,76 +5,120 @@
       "file": "v0.10.0.md",
       "version": "v0.10.0",
       "title": "A typo in a CSS class shouldn't need a human to catch it",
-      "summary": "A rendered card and its stylesheet are two files that only agree by convention, nothing in HTML or CSS enforces it. Here's how to write a fast, deterministic test that catches the drift before a render silently ships unstyled."
+      "summary": "A rendered card and its stylesheet are two files that only agree by convention, nothing in HTML or CSS enforces it. Here's how to write a fast, deterministic test that catches the drift before a render silently ships unstyled.",
+      "cover": {
+        "file": "v0.10.0.png",
+        "bytes": 20424
+      }
     },
     {
       "date": "2026-07-11",
       "file": "v0.9.0.md",
       "version": "v0.9.0",
       "title": "Your app's personal config doesn't belong next to your app's code",
-      "summary": "Ghostwriter's voice profile and credentials lived inside its own repo, so a dev checkout and a marketplace-installed copy each needed their own setup. Moving personal config to the home directory collapses that back to one source of truth."
+      "summary": "Ghostwriter's voice profile and credentials lived inside its own repo, so a dev checkout and a marketplace-installed copy each needed their own setup. Moving personal config to the home directory collapses that back to one source of truth.",
+      "cover": {
+        "file": "v0.9.0.png",
+        "bytes": 21902
+      }
     },
     {
       "date": "2026-06-30",
       "file": "v0.8.0.md",
       "version": "v0.8.0",
       "title": "One class, every token: theming a visual system with CSS custom properties",
-      "summary": "Ghostwriter's post images moved from a dark look to a light one by changing a single CSS class. Here's how to build a token-driven theme switch, render it to a deterministic PNG, and catch the one missing token that makes text disappear."
+      "summary": "Ghostwriter's post images moved from a dark look to a light one by changing a single CSS class. Here's how to build a token-driven theme switch, render it to a deterministic PNG, and catch the one missing token that makes text disappear.",
+      "cover": {
+        "file": "v0.8.0.png",
+        "bytes": 24291
+      }
     },
     {
       "date": "2026-06-29",
       "file": "v0.7.0.md",
       "version": "v0.7.0",
       "title": "Build a publish gate that fails closed, even when the input is garbage",
-      "summary": "An agent that writes a confident claim will just as confidently skip checking it. Version 0.7.0 adds a code gate that blocks publishing until every outside-world claim traces to real, live sources, and it has to survive garbage input and a harness that lies about testing it."
+      "summary": "An agent that writes a confident claim will just as confidently skip checking it. Version 0.7.0 adds a code gate that blocks publishing until every outside-world claim traces to real, live sources, and it has to survive garbage input and a harness that lies about testing it.",
+      "cover": {
+        "file": "v0.7.0.png",
+        "bytes": 23826
+      }
     },
     {
       "date": "2026-06-25",
       "file": "v0.6.0.md",
       "version": "v0.6.0",
       "title": "Parsing the session logs Claude Code warns you not to parse",
-      "summary": "Claude Code's own docs say its session transcripts are an internal format that can change on any release, yet discovering what you shipped recently has no sanctioned API. Here is how to read the logs anyway, defensively enough to survive the warning."
+      "summary": "Claude Code's own docs say its session transcripts are an internal format that can change on any release, yet discovering what you shipped recently has no sanctioned API. Here is how to read the logs anyway, defensively enough to survive the warning.",
+      "cover": {
+        "file": "v0.6.0.png",
+        "bytes": 22265
+      }
     },
     {
       "date": "2026-06-24",
       "file": "v0.5.0.md",
       "version": "v0.5.0",
       "title": "A plugin registry made of file names, kept honest by one test",
-      "summary": "Ghostwriter's new matrix card type shipped as one new file, with no registry code touched. Here's how a naming convention can stand in for a plugin registry, and the test that keeps it from shipping half-wired or quietly duplicated."
+      "summary": "Ghostwriter's new matrix card type shipped as one new file, with no registry code touched. Here's how a naming convention can stand in for a plugin registry, and the test that keeps it from shipping half-wired or quietly duplicated.",
+      "cover": {
+        "file": "v0.5.0.png",
+        "bytes": 22403
+      }
     },
     {
       "date": "2026-06-22",
       "file": "v0.4.0.md",
       "title": "One stylesheet, many card types: a themeable render pipeline with CSS variables and Playwright",
       "summary": "Ghostwriter's image cards got pulled onto one shared base and grew a portrait carousel with a progress bar. The mechanism behind it, CSS custom properties feeding a headless-browser render pipeline, is a pattern you can reuse for any HTML-to-image or HTML-to-PDF generator.",
-      "version": "v0.4.0"
+      "version": "v0.4.0",
+      "cover": {
+        "file": "v0.4.0.png",
+        "bytes": 24411
+      }
     },
     {
       "date": "2026-06-10",
       "file": "v0.3.0.md",
       "title": "A PDF is a slide deck LinkedIn will swipe through for you",
       "summary": "ghostwriter v0.3.0 added carousel support: a headless-browser render step that turns HTML slides into a single PDF, and a publisher path that uploads it through a document API LinkedIn renders as a swipeable carousel. Here's the render-and-ship pipeline, built generic enough for any chunked document upload.",
-      "version": "v0.3.0"
+      "version": "v0.3.0",
+      "cover": {
+        "file": "v0.3.0.png",
+        "bytes": 21126
+      }
     },
     {
       "date": "2026-06-08",
       "file": "v0.1.0.md",
       "title": "Rendering HTML cards to PNG with a headless browser, and why the bars don't have to be to scale",
       "summary": "Ghostwriter's 0.1.0 release added one new card type: three ascending bars for an accelerating progression, with the bar heights fixed for effect rather than computed from the numbers next to them. Building it is a clean example of a small, reusable system: a CSS brand guide, a headless-browser render step, and a verification step that checks the honesty claim is actually true.",
-      "version": "v0.1.0"
+      "version": "v0.1.0",
+      "cover": {
+        "file": "v0.1.0.png",
+        "bytes": 24134
+      }
     },
     {
       "date": "2026-06-06",
       "file": "v0.0.1.md",
       "title": "Score a prompt file like code, and give its glue full test coverage",
       "summary": "The ghostwriter skill's first versioned release made a markdown instruction file gradeable by CI and pushed its automation scripts to 100% line coverage. The two techniques worth stealing: a pass/fail scorer over frontmatter and body text, and monkeypatching a dependency your code doesn't even import until the function runs.",
-      "version": "v0.0.1"
+      "version": "v0.0.1",
+      "cover": {
+        "file": "v0.0.1.png",
+        "bytes": 23996
+      }
     },
     {
       "date": "2026-06-05",
       "file": "2026-06-05.md",
       "title": "A headless browser doubles as an image renderer, once you wait for the right signal",
-      "summary": "Ghostwriter can now attach a locally rendered diagram or card to a post, and the two techniques worth taking are waiting on a real completion signal instead of network idleness, and keeping personal styling in a gitignored file a stranger's clone never has to see."
+      "summary": "Ghostwriter can now attach a locally rendered diagram or card to a post, and the two techniques worth taking are waiting on a real completion signal instead of network idleness, and keeping personal styling in a gitignored file a stranger's clone never has to see.",
+      "cover": {
+        "file": "2026-06-05.png",
+        "bytes": 25130
+      }
     }
   ]
 }

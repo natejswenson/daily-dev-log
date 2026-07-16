@@ -5,83 +5,131 @@
       "file": "v0.6.0.md",
       "title": "How to turn an editorial rule into a lint rule",
       "summary": "I rewrote 38 blog posts against a writing contract and watched one rule get skipped over and over: every source in the bibliography must also be cited in the body. The rule was written down; nothing enforced it. Here's how to promote a style-guide sentence into a deterministic check your build can fail.",
-      "version": "v0.6.0"
+      "version": "v0.6.0",
+      "cover": {
+        "file": "v0.6.0.png",
+        "bytes": 17430
+      }
     },
     {
       "date": "2026-07-12",
       "file": "v0.5.2.md",
       "title": "When three releases land on one day, date alone can't sort your feed",
       "summary": "My dev-log feed sorted newest-first by date, which worked until the day I cut three releases before dinner and the newest one rendered at the bottom. The fix is a two-key comparator: date first, version as the tie-break, with the version segments compared as numbers. Here's how to build one that survives v0.10.0.",
-      "version": "v0.5.2"
+      "version": "v0.5.2",
+      "cover": {
+        "file": "v0.5.2.png",
+        "bytes": 22644
+      }
     },
     {
       "date": "2026-07-11",
       "file": "v0.5.1.md",
       "title": "npx ran my CLI and nothing happened",
       "summary": "Every npx invocation of my CLI exited 0 with no output, while running the file directly worked fine. The bug was one strict-equality check that can't survive npm's bin symlink. Here's how to detect 'am I the main module' correctly in an ESM CLI.",
-      "version": "v0.5.1"
+      "version": "v0.5.1",
+      "cover": {
+        "file": "v0.5.1.png",
+        "bytes": 18957
+      }
     },
     {
       "date": "2026-07-11",
       "file": "v0.5.0.md",
       "title": "Give the agent a plan, not a shell",
       "summary": "I rebuilt this dev log's skill so the LLM stops running twenty hand-rolled bash steps and starts consuming one JSON plan from a tested CLI. Here's the pattern: put everything deterministic in code you can test, and put everything non-deterministic behind a lint gate and a budget-capped judge.",
-      "version": "v0.5.0"
+      "version": "v0.5.0",
+      "cover": {
+        "file": "v0.5.0.png",
+        "bytes": 18207
+      }
     },
     {
       "date": "2026-07-11",
       "file": "v0.4.2.md",
       "title": "The fallback that pointed at a directory that never existed",
       "summary": "devlog's voice-profile fallback pointed at a path its sibling tool never actually used, so the fallback could never fire and nothing ever errored. A small patch, and a useful lesson about tools that share files by convention.",
-      "version": "v0.4.2"
+      "version": "v0.4.2",
+      "cover": {
+        "file": "v0.4.2.png",
+        "bytes": 20603
+      }
     },
     {
       "date": "2026-07-11",
       "file": "v0.4.1.md",
       "title": "Building a Claude Code plugin marketplace that survives its own release pipeline",
       "summary": "A plugin marketplace's skill-discovery rule lives entirely in a directory shape, not a manifest field, so it has to be built, lint-checked, and released against that same shape. Here's how to do all three without a CI job that lies to you.",
-      "version": "v0.4.1"
+      "version": "v0.4.1",
+      "cover": {
+        "file": "v0.4.1.png",
+        "bytes": 23170
+      }
     },
     {
       "date": "2026-06-28",
       "file": "v0.4.0.md",
       "title": "Turning 'cite your sources' into a contract an agent can't quietly ignore",
       "summary": "devlog 0.4.0 rewrote the instructions behind /devlog so every release post has to become a researched, cited implementation guide. The instructions alone don't guarantee it happens, so here's how to turn a soft citation ask into a structured contract and a checker that catches it when the model doesn't comply.",
-      "version": "v0.4.0"
+      "version": "v0.4.0",
+      "cover": {
+        "file": "v0.4.0.png",
+        "bytes": 20886
+      }
     },
     {
       "date": "2026-06-20",
       "file": "v0.3.1.md",
       "title": "Give your CLI script two lives: a program and a module",
       "summary": "devlog's v0.3.1 test suite needed bin/devlog.js's logic importable without also running its command-line dispatch. Here's the guard pattern that split the two, and the symlink trap that broke it again a few weeks later.",
-      "version": "v0.3.1"
+      "version": "v0.3.1",
+      "cover": {
+        "file": "v0.3.1.png",
+        "bytes": 22442
+      }
     },
     {
       "date": "2026-06-19",
       "file": "v0.3.0.md",
       "title": "What it takes to treat a git tag as untrusted input",
       "summary": "devlog switched from a daily commit log to one entry per release tag. Building that meant treating every tag name as untrusted input, picking the right previous release even when prereleases are mixed in, and making the whole run safe to repeat.",
-      "version": "v0.3.0"
+      "version": "v0.3.0",
+      "cover": {
+        "file": "v0.3.0.png",
+        "bytes": 21740
+      }
     },
     {
       "date": "2026-06-08",
       "file": "v0.2.0.md",
       "title": "Filtering a monorepo's git log without trusting the filter",
       "summary": "v0.2.0 let one devlog config serve several projects out of a shared monorepo. Getting there safely is a short lesson in two habits: scoping git history correctly, and treating any value headed for a shell command as input you don't trust yet.",
-      "version": "v0.2.0"
+      "version": "v0.2.0",
+      "cover": {
+        "file": "v0.2.0.png",
+        "bytes": 21328
+      }
     },
     {
       "date": "2026-06-05",
       "file": "v0.1.9.md",
       "title": "A bare onClick isn't a button: making a shared React toggle keyboard-accessible",
       "summary": "The drop-in React component that renders a dev-log feed toggled each entry with a plain onClick, so every site that copied it inherited a feed keyboard and screen-reader users couldn't operate. Here's how to rebuild that toggle as a real ARIA disclosure control, and the test that proves the keyboard path works.",
-      "version": "v0.1.9"
+      "version": "v0.1.9",
+      "cover": {
+        "file": "v0.1.9.png",
+        "bytes": 24323
+      }
     },
     {
       "date": "2026-05-01",
       "file": "2026-05-01.md",
       "title": "Turning a personal script into a one-command npx installer",
-      "summary": "Making a working personal tool installable by a stranger means declaring a real executable, prompting for defaults instead of demanding a config edit, and verifying the tarball before you trust a publish. Here's what that took, including the two ways npm quietly rejected the first attempt."
+      "summary": "Making a working personal tool installable by a stranger means declaring a real executable, prompting for defaults instead of demanding a config edit, and verifying the tarball before you trust a publish. Here's what that took, including the two ways npm quietly rejected the first attempt.",
+      "cover": {
+        "file": "2026-05-01.png",
+        "bytes": 21495
+      }
     }
   ]
 }

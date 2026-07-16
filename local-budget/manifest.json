@@ -5,14 +5,22 @@
       "file": "v0.1.1.md",
       "title": "Fixing duplicate-detection bugs by grouping on a canonical key, not a raw string",
       "summary": "A subscription can vanish from a recurring-charges report simply because the bank changed how it labels the charge. The fix wasn't new logic, it was reading a canonical key that already existed.",
-      "version": "v0.1.1"
+      "version": "v0.1.1",
+      "cover": {
+        "file": "v0.1.1.png",
+        "bytes": 25066
+      }
     },
     {
       "date": "2026-07-11",
       "file": "v0.1.0.md",
       "title": "Let an agent read your bank statements without handing it your PII",
       "summary": "A local MCP server turns your bank statements into tools an AI agent can call. Here is how to build one where the model gets answers, never raw account numbers.",
-      "version": "v0.1.0"
+      "version": "v0.1.0",
+      "cover": {
+        "file": "v0.1.0.png",
+        "bytes": 21292
+      }
     }
   ]
 }
