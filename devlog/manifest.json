@@ -8,7 +8,7 @@
       "version": "v0.6.0",
       "cover": {
         "file": "v0.6.0.png",
-        "bytes": 17430
+        "bytes": 13430
       }
     },
     {
@@ -19,7 +19,7 @@
       "version": "v0.5.2",
       "cover": {
         "file": "v0.5.2.png",
-        "bytes": 22644
+        "bytes": 21226
       }
     },
     {
@@ -30,7 +30,7 @@
       "version": "v0.5.1",
       "cover": {
         "file": "v0.5.1.png",
-        "bytes": 18957
+        "bytes": 17998
       }
     },
     {
@@ -41,7 +41,7 @@
       "version": "v0.5.0",
       "cover": {
         "file": "v0.5.0.png",
-        "bytes": 18207
+        "bytes": 12091
       }
     },
     {
@@ -52,7 +52,7 @@
       "version": "v0.4.2",
       "cover": {
         "file": "v0.4.2.png",
-        "bytes": 20603
+        "bytes": 19155
       }
     },
     {
@@ -63,7 +63,7 @@
       "version": "v0.4.1",
       "cover": {
         "file": "v0.4.1.png",
-        "bytes": 23170
+        "bytes": 24154
       }
     },
     {
@@ -74,7 +74,7 @@
       "version": "v0.4.0",
       "cover": {
         "file": "v0.4.0.png",
-        "bytes": 20886
+        "bytes": 21200
       }
     },
     {
@@ -85,7 +85,7 @@
       "version": "v0.3.1",
       "cover": {
         "file": "v0.3.1.png",
-        "bytes": 22442
+        "bytes": 15645
       }
     },
     {
@@ -96,7 +96,7 @@
       "version": "v0.3.0",
       "cover": {
         "file": "v0.3.0.png",
-        "bytes": 21740
+        "bytes": 14333
       }
     },
     {
@@ -107,7 +107,7 @@
       "version": "v0.2.0",
       "cover": {
         "file": "v0.2.0.png",
-        "bytes": 21328
+        "bytes": 16048
       }
     },
     {
@@ -118,7 +118,7 @@
       "version": "v0.1.9",
       "cover": {
         "file": "v0.1.9.png",
-        "bytes": 24323
+        "bytes": 22075
       }
     },
     {
@@ -128,7 +128,7 @@
       "summary": "Making a working personal tool installable by a stranger means declaring a real executable, prompting for defaults instead of demanding a config edit, and verifying the tarball before you trust a publish. Here's what that took, including the two ways npm quietly rejected the first attempt.",
       "cover": {
         "file": "2026-05-01.png",
-        "bytes": 21495
+        "bytes": 15152
       }
     }
   ]

@@ -8,7 +8,7 @@
       "version": "v1.0.0",
       "cover": {
         "file": "v1.0.0.png",
-        "bytes": 21843
+        "bytes": 18366
       }
     },
     {
@@ -19,7 +19,7 @@
       "version": "v0.3.0",
       "cover": {
         "file": "v0.3.0.png",
-        "bytes": 18676
+        "bytes": 15817
       }
     },
     {
@@ -30,7 +30,7 @@
       "version": "v0.2.0",
       "cover": {
         "file": "v0.2.0.png",
-        "bytes": 22078
+        "bytes": 17440
       }
     },
     {
@@ -41,7 +41,7 @@
       "version": "v0.1.1",
       "cover": {
         "file": "v0.1.1.png",
-        "bytes": 20846
+        "bytes": 16218
       }
     }
   ]
