@@ -3,23 +3,21 @@
     {
       "date": "2026-07-16",
       "file": "v0.8.1.md",
-      "title": "Rendering cover art locally with a headless browser, and why the first batch all looked the same",
-      "summary": "Every dev-log post now gets a custom cover image rendered locally by a headless browser instead of a hosted image API. The rendering pipeline was the easy part; getting the font to load before the screenshot, and getting each cover to actually look different, took the real debugging.",
+      "title": "Encoding the fix into the skill, not just the code: how one agent session backfilled 49 cover images",
+      "summary": "devlog v0.8.1 fixed bland, repetitive cover images, but the fix that stuck wasn't in the render code. It was a line added to the skill's own instructions and a machine-checked invariant, which is what let one Claude Code session regenerate all 49 backfilled covers in parallel and get them right the second time.",
       "version": "v0.8.1",
       "tags": [
-        "playwright",
-        "headless-browser",
-        "svg",
+        "claude-code",
+        "skills",
+        "subagents",
+        "ai-agents",
+        "devlog",
         "image-generation",
-        "css",
-        "font-loading",
-        "png",
-        "static-sites",
-        "devlog"
+        "playwright"
       ],
       "cover": {
         "file": "v0.8.1.png",
-        "bytes": 21636
+        "bytes": 22409
       }
     },
     {
