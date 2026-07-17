@@ -8,7 +8,7 @@
       "summary": "A rendered card and its stylesheet are two files that only agree by convention, nothing in HTML or CSS enforces it. Here's how to write a fast, deterministic test that catches the drift before a render silently ships unstyled.",
       "cover": {
         "file": "v0.10.0.png",
-        "bytes": 18845
+        "bytes": 19172
       }
     },
     {
@@ -19,7 +19,7 @@
       "summary": "Ghostwriter's voice profile and credentials lived inside its own repo, so a dev checkout and a marketplace-installed copy each needed their own setup. Moving personal config to the home directory collapses that back to one source of truth.",
       "cover": {
         "file": "v0.9.0.png",
-        "bytes": 19991
+        "bytes": 19926
       }
     },
     {
@@ -30,7 +30,7 @@
       "summary": "Ghostwriter's post images moved from a dark look to a light one by changing a single CSS class. Here's how to build a token-driven theme switch, render it to a deterministic PNG, and catch the one missing token that makes text disappear.",
       "cover": {
         "file": "v0.8.0.png",
-        "bytes": 19345
+        "bytes": 18970
       }
     },
     {
@@ -41,7 +41,7 @@
       "summary": "An agent that writes a confident claim will just as confidently skip checking it. Version 0.7.0 adds a code gate that blocks publishing until every outside-world claim traces to real, live sources, and it has to survive garbage input and a harness that lies about testing it.",
       "cover": {
         "file": "v0.7.0.png",
-        "bytes": 20707
+        "bytes": 17300
       }
     },
     {
@@ -52,7 +52,7 @@
       "summary": "Claude Code's own docs say its session transcripts are an internal format that can change on any release, yet discovering what you shipped recently has no sanctioned API. Here is how to read the logs anyway, defensively enough to survive the warning.",
       "cover": {
         "file": "v0.6.0.png",
-        "bytes": 19297
+        "bytes": 20274
       }
     },
     {
@@ -63,7 +63,7 @@
       "summary": "Ghostwriter's new matrix card type shipped as one new file, with no registry code touched. Here's how a naming convention can stand in for a plugin registry, and the test that keeps it from shipping half-wired or quietly duplicated.",
       "cover": {
         "file": "v0.5.0.png",
-        "bytes": 15345
+        "bytes": 19645
       }
     },
     {
@@ -74,7 +74,7 @@
       "version": "v0.4.0",
       "cover": {
         "file": "v0.4.0.png",
-        "bytes": 24106
+        "bytes": 18492
       }
     },
     {
@@ -85,7 +85,7 @@
       "version": "v0.3.0",
       "cover": {
         "file": "v0.3.0.png",
-        "bytes": 15799
+        "bytes": 14689
       }
     },
     {
@@ -96,7 +96,7 @@
       "version": "v0.1.0",
       "cover": {
         "file": "v0.1.0.png",
-        "bytes": 20735
+        "bytes": 16768
       }
     },
     {
@@ -107,7 +107,7 @@
       "version": "v0.0.1",
       "cover": {
         "file": "v0.0.1.png",
-        "bytes": 18670
+        "bytes": 15723
       }
     },
     {
@@ -117,7 +117,7 @@
       "summary": "Ghostwriter can now attach a locally rendered diagram or card to a post, and the two techniques worth taking are waiting on a real completion signal instead of network idleness, and keeping personal styling in a gitignored file a stranger's clone never has to see.",
       "cover": {
         "file": "2026-06-05.png",
-        "bytes": 22837
+        "bytes": 17734
       }
     }
   ]

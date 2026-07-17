@@ -17,7 +17,7 @@
       ],
       "cover": {
         "file": "v0.8.1.png",
-        "bytes": 22409
+        "bytes": 20587
       }
     },
     {
@@ -28,7 +28,7 @@
       "version": "v0.6.0",
       "cover": {
         "file": "v0.6.0.png",
-        "bytes": 13430
+        "bytes": 17937
       }
     },
     {
@@ -39,7 +39,7 @@
       "version": "v0.5.2",
       "cover": {
         "file": "v0.5.2.png",
-        "bytes": 21226
+        "bytes": 22948
       }
     },
     {
@@ -50,7 +50,7 @@
       "version": "v0.5.1",
       "cover": {
         "file": "v0.5.1.png",
-        "bytes": 17998
+        "bytes": 16312
       }
     },
     {
@@ -61,7 +61,7 @@
       "version": "v0.5.0",
       "cover": {
         "file": "v0.5.0.png",
-        "bytes": 12091
+        "bytes": 20873
       }
     },
     {
@@ -72,7 +72,7 @@
       "version": "v0.4.2",
       "cover": {
         "file": "v0.4.2.png",
-        "bytes": 19155
+        "bytes": 16976
       }
     },
     {
@@ -83,7 +83,7 @@
       "version": "v0.4.1",
       "cover": {
         "file": "v0.4.1.png",
-        "bytes": 24154
+        "bytes": 23442
       }
     },
     {
@@ -94,7 +94,7 @@
       "version": "v0.4.0",
       "cover": {
         "file": "v0.4.0.png",
-        "bytes": 21200
+        "bytes": 23655
       }
     },
     {
@@ -105,7 +105,7 @@
       "version": "v0.3.1",
       "cover": {
         "file": "v0.3.1.png",
-        "bytes": 15645
+        "bytes": 17792
       }
     },
     {
@@ -116,7 +116,7 @@
       "version": "v0.3.0",
       "cover": {
         "file": "v0.3.0.png",
-        "bytes": 14333
+        "bytes": 14852
       }
     },
     {
@@ -127,7 +127,7 @@
       "version": "v0.2.0",
       "cover": {
         "file": "v0.2.0.png",
-        "bytes": 16048
+        "bytes": 17749
       }
     },
     {
@@ -138,7 +138,7 @@
       "version": "v0.1.9",
       "cover": {
         "file": "v0.1.9.png",
-        "bytes": 22075
+        "bytes": 18794
       }
     },
     {
@@ -148,7 +148,7 @@
       "summary": "Making a working personal tool installable by a stranger means declaring a real executable, prompting for defaults instead of demanding a config edit, and verifying the tarball before you trust a publish. Here's what that took, including the two ways npm quietly rejected the first attempt.",
       "cover": {
         "file": "2026-05-01.png",
-        "bytes": 15152
+        "bytes": 14880
       }
     }
   ]
