@@ -1,0 +1,23 @@
+{
+  "entries": [
+    {
+      "date": "2026-07-15",
+      "file": "2026-07-15.md",
+      "title": "Tag pills turned an already-collected field into working search",
+      "summary": "My dev log grew past the point where scrolling found anything, so I wired the topic tags I was already generating for every post into a live, keyboard-accessible tag search — and hit two classic 'the whole card is a link' accessibility traps along the way.",
+      "tags": [
+        "search",
+        "accessibility",
+        "aria",
+        "css",
+        "roving-tabindex",
+        "stretched-link",
+        "debounce"
+      ],
+      "cover": {
+        "file": "2026-07-15.png",
+        "bytes": 16839
+      }
+    }
+  ]
+}
