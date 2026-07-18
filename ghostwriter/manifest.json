@@ -1,6 +1,27 @@
 {
   "entries": [
     {
+      "date": "2026-07-18",
+      "file": "v0.11.0.md",
+      "title": "Catching layout bugs before your eyes do: a render-time QA gate for generated visuals",
+      "summary": "How to measure a rendered HTML page for overflow and truncation before a human ever sees it, and the CSS trick that lets one layout adapt itself to however much content lands in it.",
+      "version": "v0.11.0",
+      "tags": [
+        "playwright",
+        "css",
+        "has-selector",
+        "visual-regression-testing",
+        "dom-testing",
+        "browser-automation",
+        "generative-content",
+        "layout-qa"
+      ],
+      "cover": {
+        "file": "v0.11.0.png",
+        "bytes": 19960
+      }
+    },
+    {
       "date": "2026-07-11",
       "file": "v0.10.0.md",
       "version": "v0.10.0",
