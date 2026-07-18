@@ -23,6 +23,26 @@
       }
     },
     {
+      "date": "2026-07-11",
+      "file": "v0.8.1.md",
+      "title": "How to turn a folder of Claude Code skills into a discoverable plugin marketplace",
+      "summary": "Ghostwriter moved from a manual symlink install to a real Claude Code plugin, which meant learning the marketplace.json/plugin.json schema and one directory-nesting rule that Claude Desktop enforces and the CLI quietly didn't.",
+      "version": "v0.8.1",
+      "tags": [
+        "claude-code",
+        "plugin-marketplace",
+        "skill-md",
+        "monorepo",
+        "ci",
+        "json-lint",
+        "developer-tooling"
+      ],
+      "cover": {
+        "file": "v0.8.1.png",
+        "bytes": 21571
+      }
+    },
+    {
       "date": "2026-06-30",
       "file": "v0.8.0.md",
       "version": "v0.8.0",

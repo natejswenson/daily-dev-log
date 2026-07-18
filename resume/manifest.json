@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "date": "2026-07-11",
+      "file": "v1.0.1.md",
+      "title": "How to tell which package in a monorepo actually needs a release",
+      "summary": "Two sibling packages in the same repo both got a patch release from the exact same commit. Here's the git-tag-plus-path-filter technique that tells you which packages actually need a release when one commit touches all of them.",
+      "version": "v1.0.1",
+      "tags": [
+        "git",
+        "monorepo",
+        "semver",
+        "release-engineering",
+        "tagging",
+        "path-filter",
+        "ci-cd"
+      ],
+      "cover": {
+        "file": "v1.0.1.png",
+        "bytes": 17846
+      }
+    },
+    {
       "date": "2026-07-09",
       "file": "v1.0.0.md",
       "title": "Let the agent judge, let the script verify: a pattern for self-checking skills",
