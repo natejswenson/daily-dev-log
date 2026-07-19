@@ -6,6 +6,7 @@
       "version": "v0.22.2",
       "title": "Let the model phrase the judgment, not derive it",
       "summary": "My analysis tools were handing the LLM raw numbers and a legend, then trusting it to classify. Here is how I pulled every judgment into a pure, tested Python module so the model only has to write the sentence.",
+      "no": 50,
       "cover": {
         "file": "v0.22.2.png",
         "bytes": 18473
@@ -17,6 +18,7 @@
       "version": "v0.21.0",
       "title": "Benchmarks that count connections, not just milliseconds",
       "summary": "One of my fitness agent's MCP tools was opening nine SQLite connections to answer a single question. The fix was routine; this walkthrough builds the part that outlives it, a pytest-benchmark harness that asserts connection counts, compares against a committed baseline, and fails any PR that regresses either.",
+      "no": 37,
       "cover": {
         "file": "v0.21.0.png",
         "bytes": 20788
@@ -28,6 +30,7 @@
       "version": "v0.20.0",
       "title": "Never let one LLM call sink a whole report",
       "summary": "My fitness agent's daily PDF gained a Claude-written coaching line, which put a network call in the middle of a synchronous render. Here's how to pair that call with a deterministic fallback, and how to prove the fallback works before the day you need it.",
+      "no": 36,
       "cover": {
         "file": "v0.20.0.png",
         "bytes": 15521
@@ -39,6 +42,7 @@
       "version": "v0.16.0",
       "title": "Giving an MCP agent a way to refresh its own data",
       "summary": "My fitness agent could read the database but never freshen it. Here is how to add a side-effectful sync tool to an MCP server, keep it gap-aware, and keep it out of the loops that should stay read-only.",
+      "no": 34,
       "cover": {
         "file": "v0.16.0.png",
         "bytes": 17940
@@ -50,6 +54,7 @@
       "version": "v0.15.2",
       "title": "Why the container synced fine while the host kept hitting 429s",
       "summary": "The same sync code got rate-limited on the host and ran clean in the container, and the difference was an env-var fallback buried in a client library. How to make session caching explicit and pin it with a test so it can't silently regress.",
+      "no": 33,
       "cover": {
         "file": "v0.15.2.png",
         "bytes": 17956
@@ -61,6 +66,7 @@
       "version": "v0.15.1",
       "title": "Move the deterministic half of your LLM prompt into code",
       "summary": "When one prompt is doing eleven jobs, most of them have a right answer and don't need a model. Here is how to split an LLM feature into a tested planner, one toolless model call, and an advisory grounding check, then prove the cutover is safe before you flip it.",
+      "no": 29,
       "cover": {
         "file": "v0.15.1.png",
         "bytes": 16059
@@ -72,6 +78,7 @@
       "version": "v0.15.0",
       "title": "Wiring up CodeQL and dependency review before a repo goes public",
       "summary": "Before making a repo public, wire in the two security workflows GitHub gives you free: CodeQL for the code you wrote, dependency review for the code you pull in. Setup, verification with real output, and the traps that make both silently useless.",
+      "no": 28,
       "cover": {
         "file": "v0.15.0.png",
         "bytes": 18821
@@ -83,6 +90,7 @@
       "version": "v0.14.0",
       "title": "Automating the fix for squash-merge drift on a long-lived branch",
       "summary": "A squash-merged dev-to-main promotion leaves the two branches diverged, so the next promotion PR shows commits that already shipped. Here's a script and workflow that resets the branch automatically, including the branch-protection dance it has to do safely.",
+      "no": 27,
       "cover": {
         "file": "v0.14.0.png",
         "bytes": 15160
@@ -94,6 +102,7 @@
       "version": "v0.13.0",
       "title": "A covered line and a tested line are not the same thing",
       "summary": "This release deleted a pile of confirmed-dead code and raised test coverage on the parts that were genuinely thin. The useful part wasn't the percentage, it was catching the tests that were only pretending to check something.",
+      "no": 26,
       "cover": {
         "file": "v0.13.0.png",
         "bytes": 12823
@@ -105,6 +114,7 @@
       "version": "v0.12.0",
       "title": "Chaining a release to CI's own success, not a raw push",
       "summary": "How to wire a GitHub release off a green CI run instead of a push, guard it so an already-shipped version can't double-release, and the default-branch trap that catches anyone wiring workflow_run for the first time.",
+      "no": 25,
       "cover": {
         "file": "v0.12.0.png",
         "bytes": 16105
@@ -116,6 +126,7 @@
       "version": "v0.11.0",
       "title": "Live MCP server instructions that survive a fresh clone",
       "summary": "An MCP server can hand its client a system-prompt hint at initialize. This build wires that field to a SQLite setting, resolves it fresh on every connect, and fails open when the read misses, so a config change lands without a restart and a fresh clone still starts.",
+      "no": 20,
       "cover": {
         "file": "v0.11.0.png",
         "bytes": 18632
@@ -127,6 +138,7 @@
       "version": "v0.10.0",
       "title": "A prompt dial isn't a setting until code reads it too",
       "summary": "My fitness coach's brief had one hardcoded voice. Making it four selectable tones was the easy part; the real work was making sure a numeric 'harshness' dial did something a test could catch, not just something the model might notice.",
+      "no": 19,
       "cover": {
         "file": "v0.10.0.png",
         "bytes": 14849
@@ -138,6 +150,7 @@
       "version": "v0.9.0",
       "title": "A settings resolver that always falls back to what already worked",
       "summary": "Five coaching preferences were hardcoded into a public repo as if they were universal truths. Turning them into user settings meant building a small resolver: one precedence order across three config layers, where every bad input falls back to the value that already worked instead of raising.",
+      "no": 22,
       "cover": {
         "file": "v0.9.0.png",
         "bytes": 16796
@@ -149,6 +162,7 @@
       "version": "v0.8.0",
       "title": "Build a status grader that never gets confused by today",
       "summary": "A training-plan feature graded today's finished workout as still pending, because the code asked the calendar instead of the outcome. Here's how to build a status grader that reads outcomes first, holds judgment only where the day is genuinely unsettled, and hands the UI one verdict it never has to second-guess.",
+      "no": 21,
       "cover": {
         "file": "v0.8.0.png",
         "bytes": 16034
@@ -160,6 +174,7 @@
       "version": "v0.7.0",
       "title": "Why your agent's tool needs to say pending, not missed, when data lags",
       "summary": "My fitness agent's plan tool needed to tell the difference between a workout that failed and one my Garmin sync simply hasn't caught up to yet. Here's how to build a single agent tool that grades real-world state against a data freshness boundary instead of the calendar.",
+      "no": 18,
       "cover": {
         "file": "v0.7.0.png",
         "bytes": 15639
@@ -171,6 +186,7 @@
       "version": "v0.6.0",
       "title": "The setting that fixed a slow AI brief was hiding behind one that silently did nothing",
       "summary": "A Claude-generated daily fitness brief went from about four minutes to under 90 seconds, but not from the parallel rewrite I designed. Here's how to gate a fix behind a kill criterion, find out which agent settings are real versus silently inert, and confirm the trade with a blind judge instead of a hunch.",
+      "no": 15,
       "cover": {
         "file": "v0.6.0.png",
         "bytes": 18862
@@ -182,6 +198,7 @@
       "version": "v0.5.0",
       "title": "Give your MCP server a write tool, then delete the model from it",
       "summary": "Once an MCP server can write back as well as read, the model has no reason to run inside it anymore. Here's how to build that write tool, and the exact way a 'read-only' guard fails if you enforce it with a keyword check instead of at the connection itself.",
+      "no": 12,
       "cover": {
         "file": "v0.5.0.png",
         "bytes": 17576
@@ -193,6 +210,7 @@
       "version": "v0.3.0",
       "title": "Reuse your Claude Agent SDK tool server as a standalone MCP endpoint",
       "summary": "I exposed local-fitness's in-process Claude agent tools to real MCP clients over HTTP and stdio without writing a second copy of them, then closed the three gaps a network-reachable localhost server actually has that a subprocess-launched one doesn't.",
+      "no": 11,
       "cover": {
         "file": "v0.3.0.png",
         "bytes": 19725
@@ -203,6 +221,7 @@
       "file": "2026-06-15.md",
       "title": "Make the agent's only write a draft, and let the database enforce the rest",
       "summary": "I gave an AI agent its first real database write path by making the dangerous action unreachable instead of trusting it to behave: the tool schema never accepts a status field, and a partial unique index backstops the single-active-row rule even if the application code has a bug. Here's how to build the same draft-only boundary for any agent that writes to your own data.",
+      "no": 10,
       "cover": {
         "file": "2026-06-15.png",
         "bytes": 17735
@@ -214,6 +233,7 @@
       "version": "v0.1.0",
       "title": "Score your prompt against the types your code already trusts",
       "summary": "I turned a personal Garmin-coaching script into real software: a pytest suite behind a coverage gate, CI wiring, and a scorer that cross-validates the agent's prompt against the typed contract its own output has to satisfy. Here's how to build that check for any prompt-driven agent.",
+      "no": 5,
       "cover": {
         "file": "v0.1.0.png",
         "bytes": 16211
